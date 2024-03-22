@@ -1,138 +1,370 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+/* -- Link to Google Fonts -- */
+
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Luckiest+Guy&family=Quicksand:wght@300..700&display=swap');
+
+/* -- Page Set Up -- */
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Luckiest Guy', cursive;
+}
+
+/* -- Colours -- */
+
+.color-scheme-ax {
+    background-color:#1F0229;
+    color:#E8C4F5;
+}
+
+.color-scheme-ay {
+    background-color:#E8C4F5;
+    color: #1F0229;
+}
+
+.color-scheme-bx {
+    background-color: #084A5C;
+    color: #B6E7F5;
+}
+
+.color-scheme-by {
+    background-color: #B6E7F5;
+    color: #084A5C;
+}
+
+.color-scheme-cx {
+    background-color: #1F0229;
+    color: #B6E7F5;
+}
+
+.color-scheme-cy {
+    background-color:#B6E7F5;
+    color: #1F0229;
+}
+
+.color-scheme-dx {
+    background-color: #084A5C;
+    color:#E8C4F5;
+}
+
+.color-scheme-dy {
+    background-color:#E8C4F5;
+    color: #084A5C;
+}
+
+.color-scheme-e {
+    background-color: red;
+}
+
+/* -- Navbar -- */
+
+.navbar {
+    background-color:#B6E7F5 !important;
+    font-family: 'Luckiest Guy', cursive !important;
+    color: #084A5C !important;
+}
+
+.navbar-brand {
+    color:#084A5C;
+    font-size: 2rem;
+}
+
+#page1 {
+    color:#084A5C;
+}
+
+#page2 {
+    color:#084A5C;
+}
+
+#page3 {
+    color:#084A5C;
+}
+
+#page4 {
+    color:#084A5C;
+}
+
+#page5 {
+    color:#084A5C;
+}
+
+/* -- Game -- */
+/* -- Controls Area -- */
+
+.main-title {
+    text-align: center;
+    padding: 20px 0 10px 0;
+    margin: 0;
+    color:#E8C4F5 !important;
+}
+
+.game-area {
+    text-align: center;
+    padding: 0 0 20px 0;
+    margin: 0;
+}
+
+.icon-panel {
+    margin: 5px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.icon {
+    color:#E8C4F5 !important;
+    border-color: #E8C4F5 !important;
+}
+
+/* -- Question Area -- */
+
+.question-area {
+    padding-top: 20px;
+}
+
+.question-title {
+    text-align: center;
+    margin: 0;
+}
+
+.question-div {
+    text-align: center;
+    font-size: 40px;
+    margin: 0;
+}
+
+#answer-box{
     
-<!-- Favicon Link -->
+    margin-top: 0;
+    text-align: center;
+    font-size: 20px;
+    height: 40px;
+    width: 120px;
+}
 
-<!-- Bootstrap Links -->
+#submit {
+    background-color: #1F0229 !important;
+    color:#E8C4F5 !important;
+}
 
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+/* -- Timer Area -- */
 
-<!-- Fontawesome Link -->
+.timer-row {
+    padding: 20px;
+    text-align: center;
+}
 
-<script src="https://kit.fontawesome.com/b1a8406ee7.js" crossorigin="anonymous"></script>
+.timer-area {
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
 
-<!-- CSS Link -->
+.novice-timer {
+    background-color:#E8C4F5;
+    color:#1F0229;
+    padding: 5px;
+    height: 100%;
+    width: 80%;
+    font-size: x-large;
+} 
 
-    <link rel="stylesheet" href="assets/css/style.css">
+.adept-timer {
+    background-color:#084A5C;
+    color:#B6E7F5;
+    padding: 5px;
+    height: 100%;
+    width: 80%;
+    font-size: x-large;
+} 
 
-<!-- Page Title -->
+.advanced-timer {
+    background-color:#E8C4F5;
+    color:#1F0229;
+    padding: 5px;
+    height: 100%;
+    width: 80%;
+    font-size: x-large;
+} 
 
-    <title>Fast Maths</title>
-</head>
+/* -- Scores Area -- */
 
-<!-- Bootstrap Navbar -->
+.score-area {
+    padding-bottom: 20px;
+}
 
-<body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">Fast Maths</a>
-          <button class="navbar-toggler" type="button" data-type="navbar" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" id="page1" aria-current="page" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" id="page2" href="addition.html">Addition</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" id="page3" href="subtraction.html">Subtraction</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" id="page4" href="division.html">Division</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" id="page5" href="instructions.html">Instructions</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+.scores-title {
+    text-align: center;
+}
 
-<!-- Game -->
+.scores {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
 
-<div class="row g-0">
-    <div class="col-md-6 game-area color-scheme-ax">
-        <a class="navbar-brand" href="index.html"><h1 class="main-title">Speed Mulitplication</h1></a>
-        <section>
-		<div class="controls-area">
-			<button id="questionA" data-type="multiplication"  class="btn btn-outline-light btn-lg icon-panel clickOn">
-				<i class="fa-solid fa-bolt icon"></i>
-			</button>
-		</div>
-        </section>
+.positive-score {
+    margin-left: 20px;
+    margin-right: 20px;
+}
 
-<!-- Question Area -->
+.negative-score {
+    margin-left: 20px;
+    margin-right: 20px;
+}
 
-        <section>
-        <div class="question-area">
-            <h3 class="question-title">Question</h3>
-            <div class="question-div">
-            <span id="partA">0</span>                
-            <span>x</span>
-            <span id="partB">0</span>
-            <span>=</span>
-            <input id="answer-box" type="number" placeholder="">
-            <button id="submit" type="button" data-type="submit" class="btn btn-outline-dark clickOn" value="submit">Submit</button>
-            </div>
-        </div>
-        </section>
-    </div>
+/* -- Footer -- */
 
-<!-- Timer -->
+.footer-top {
+    text-align: center;
+    font-size: 1rem;
+    padding: 20px 0 20px 0;
+}
 
-    <div class="col-md-6 color-scheme-ay">
-        <section>
-        <div class="row timer-row g-0">
-            <div class="col-md-4 timer-area color-scheme-ax">
-                <button class="timer clickOn novice-timer" id="timerDisplayNovice" data-type="timer"><h4>Novice</h4></button>
-            </div>
-            <div class="col-md-4 timer-area color-scheme-by">
-                <button class="timer clickOn adept-timer" id="timerDisplayIntermediate" data-type="timer"><h4>Adept</h4></button>
-            </div>
-            <div class="col-md-4 timer-area color-scheme-ax">
-                <button class="timer clickOn advanced-timer" id="timerDisplayAdvanced" data-type="timer"><h4>Advanced</h4></button>
-            </div>            
-        </div>
-        </section>
+.review {
+    padding-bottom: 0;
+}
 
-<!-- Scores -->
+.stars {
+    text-align: center;
+    padding-top: 0;
+}
 
-        <section>
-            <div class="score-area color-scheme-ay">
-                <h3 class="scores-title">Scores</h3>
-                <p class="scores">Correct Answers <span class="positive-score" id="positive-score">0</span></p>
-                <p class="scores">Incorrect Answers<span class="negative-score" id="negative-score">0</span></p>
-            </div>
-        </section>
-    </div>
+.reset {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
 
-<!-- Footer -->
+#reset {
+    background-color:#084A5C !important;
+    color:#B6E7F5 !important;
+    width: 150px;
+    height: 50px;
+}
 
-<footer>
-    <section>
-    <div class="row">
-        <div class="col-md-3 footer-top color-scheme-bx">
-            <p class="review">Review Us</p>
-            <div class="stars"><i class="fa-solid fa-star star1"></i><i class="fa-solid fa-star star2"></i></i><i class="fa-solid fa-star star3"></i><i class="fa-solid fa-star star4"></i><i class="fa-solid fa-star star5"></i></div>
-        </div>
-        <div class="col-md-3 color-scheme-by reset"><button id="reset" type="button" data-type="reset" class="btn btn-outline-dark clickOn reset" value="submit">Reset Game</button></div>
-        <div class="col-md-3 footer-top copyright color-scheme-bx">Copyright 2024 <i class="fa-regular fa-copyright"></i></div>
-        <div class="col-md-3 footer-top social media color-scheme-by">
-            <p>Share your progress</p>
-            <div><a class="footer-links" href="https://www.tiktok.com/" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
-                <a class="footer-links" href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                <a class="footer-links" href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-                <a class="footer-links" href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a></div>
-        </div>
-    </div>
-    </section>
-</footer>
-</body>
-</html>
+#add-reset {
+    background-color:#084A5C !important;
+    color:#B6E7F5 !important;
+    width: 150px;
+    height: 50px;
+}
+
+.social-links {
+    text-align: center;
+    font-size: 1rem;
+    padding: 20px;
+}
+
+.footer-links{
+    padding-left: 20px;
+    padding-right: 20px;
+    color:#084A5C !important;
+}
+
+/* -- Addition Page -- */
+/* -- Question and Answer Section -- */
+
+#add-answer-box{
+    
+    margin-top: 0;
+    text-align: center;
+    font-size: 20px;
+    height: 40px;
+    width: 120px;
+}
+
+#add-submit{
+    background-color: #1F0229 !important;
+    color:#E8C4F5 !important;
+}
+
+/* -- Subtraction Page -- */
+/* -- Question and Answer Section -- */
+
+#subtract-answer-box{
+    
+    margin-top: 0;
+    text-align: center;
+    font-size: 20px;
+    height: 40px;
+    width: 120px;
+}
+
+#subtract-submit{
+    background-color: #1F0229 !important;
+    color:#E8C4F5 !important;
+}
+
+/* -- Instructions Page -- */
+/* -- Instructions -- */
+
+#instructions-title {
+    padding: 0 20px 0 20px;
+    text-align: center;
+}
+
+.instructions {
+    padding: 0 20px 20px 20px;
+    margin: 0;
+    text-align: center;
+}
+
+/* -- Examples -- */
+
+#examples-title {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.examples-subtitle {
+    text-align: center;
+}
+
+.examples {
+    text-align: center;
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+/* -- Timer -- */
+
+.timer-subtitle {
+    padding: 20px 20px 0 20px;
+    text-align: center;
+}
+
+.timer-script {
+    padding: 0 20px 20px 20px;
+    margin: 0;
+    text-align: center;
+}
+
+/* -- Restart -- */
+
+#restart {
+    padding: 20px 20px 0 20px;
+    text-align: center;
+}
+
+.restart-text {
+    padding: 0 20px 20px 20px;
+    margin: 0;
+    text-align: center;
+}
+
+/* -- Enjoy -- */
+
+#enjoy {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0;
+}
