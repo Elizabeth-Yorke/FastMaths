@@ -94,7 +94,27 @@ h1, h2, h3, h4, h5 {
     color:#084A5C;
 }
 
-/* -- Game -- */
+/* -- Welcome Area -- */
+
+/* -- Select Page Choices -- */
+
+.choices {
+    text-align: center;
+    padding: 20px;
+}
+
+.choice {
+    border-radius: 5%;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Luckiest Guy', cursive;
+    padding: 10px;
+}
+
+
+
+
+/* -- Multiplication Page -- */
 /* -- Controls Area -- */
 
 .main-title {
