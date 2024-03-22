@@ -107,13 +107,30 @@ h1, h2, h3, h4, h5 {
     padding: 20px;
 }
 
-.choice {
-    border-radius: 5%;
+.choices-area {
     text-align: center;
-    text-decoration: none;
-    font-family: 'Luckiest Guy', cursive;
-    padding: 10px;
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
+
+.choice {
+    background-color:#084A5C;
+    color:#B6E7F5;
+    padding: 5px;
+    height: 100%;
+    width: 80%;
+    font-size: x-large;
+} 
+
+.to-instructions {
+    background-color:#E8C4F5;
+    color:#1F0229;
+    padding: 5px;
+    height: 100%;
+    width: 80%;
+    font-size: x-large;
+}
+
 
 /* -- Multiplication Page -- */
 /* -- Controls Area -- */

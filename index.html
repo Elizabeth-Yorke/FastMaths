@@ -62,7 +62,7 @@
 
 <section>
     <div class="color-scheme-ax">
-        <a class="navbar-brand" href="index.html"><h1 class="main-title">Welcome to <i class="fa-solid fa-bolt"></i> Fast Maths!</h1></a>
+        <a class="navbar-brand" href="index.html"><h1 class="main-title"><i class="fa-solid fa-bolt"></i> Fast Maths!</h1></a>
         <p class="instructions">The fast and fun way to improve you mental maths skills!</p>
         <p class="instructions">Select an option below to start challenging yourself.</p>
     </div>
@@ -71,23 +71,45 @@
 <!-- Select game buttons -->
 
 <section>
-    <div class="choices row color-scheme-ay">
-        <div class="col-md-4">
-            <a class="color-scheme-ax choice" id="to-multiplication" href="multiplication.html">
-                <i class="fa-solid fa-xmark"></i>  Multiplication
-            </a>
-        </div>
-        <div class="col-md-4">
-            <a class="color-scheme-ax choice" id="to-addition" href="addition.html">
-                <i class="fa-solid fa-plus"></i>  Addition
-            </a>
-        </div>
-        <div class="col-md-4">
-            <a class="color-scheme-ax choice" id="to-intructions" href="instructions.html">
-                <i class="fa-regular fa-circle-question"></i>  Instructions
-            </a>
-        </div>
+  <div class="row choices g-0 color-scheme-ax">
+      <div class="col-md-3 choices-area color-scheme-by">
+          <a href="multiplication.html">
+            <button class="color-scheme-by choice" id="to-multiplication">
+              <h4>Multiplication</h4>
+            </button>
+          </a>
+      </div>
+      <div class="col-md-3 choices-area color-scheme-by">
+        <a href="addition.html">
+          <button class="color-scheme-by choice" id="to-addition">
+            <h4>Addition</h4>
+          </button>
+        </a>
+      </div>
+      <div class="col-md-3 choices-area color-scheme-by">
+        <a href="subtraction.html">
+          <button class="color-scheme-by choice" id="to-subtraction">
+            <h4>Subtraction</h4>
+          </button>
+        </a>
+      </div>
+      <div class="col-md-3 choices-area color-scheme-by">
+        <a href="division.html">
+          <button class="color-scheme-by choice" id="to-division">
+            <h4>Division</h4>
+          </button>
+        </a>
+      </div>
+  </div>
+  <div class="row intstructions-row g-0 color-scheme-ay">
+    <div class="choices-area color-scheme-ax" id="to-instructions">
+      <a href="division.html">
+        <button class="color-scheme-ax to-instructions" id="to-division">
+          <h4>Click here for instructions</h4>
+        </button>
+      </a>
     </div>
+  </div>
 </section>
 
 <!-- Enjoy your game -->
