@@ -108,9 +108,6 @@ h1, h2, h3, h4, h5 {
     padding: 10px;
 }
 
-
-
-
 /* -- Multiplication Page -- */
 /* -- Controls Area -- */
 
@@ -127,7 +124,7 @@ h1, h2, h3, h4, h5 {
     margin: 0;
 }
 
-.icon-panel {
+#questionA {
     margin: 5px;
     height: 50px;
     width: 50px;
@@ -157,7 +154,7 @@ h1, h2, h3, h4, h5 {
     margin: 0;
 }
 
-#answer-box{
+#answer-box-A{
     
     margin-top: 0;
     text-align: center;
@@ -166,7 +163,7 @@ h1, h2, h3, h4, h5 {
     width: 120px;
 }
 
-#submit {
+#submitA {
     background-color: #1F0229 !important;
     color:#E8C4F5 !important;
 }
