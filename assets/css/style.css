@@ -406,3 +406,24 @@ h1, h2, h3, h4, h5 {
     padding-bottom: 20px;
     margin: 0;
 }
+
+/* -- 404 Page -- */
+
+.message404 {
+    text-align:center;
+}
+
+.icon404 {
+    text-align: center;
+    padding: 20px;
+}
+
+.to-home {
+    background-color:#E8C4F5;
+    color:#1F0229;
+    border-radius: 50%;
+    padding: 5px;
+    height: 200px;
+    width: 200px;
+    font-size: 48px;
+}
