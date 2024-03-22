@@ -74,22 +74,29 @@ h1, h2, h3, h4, h5 {
     font-size: 2rem;
 }
 
-#page1 {
+#pageWelcome {
     color:#084A5C;
 }
 
-#page2 {
+#pageA {
     color:#084A5C;
 }
 
-#page3 {
+#pageB {
     color:#084A5C;
 }
 
-#page4 {
+#pageC {
     color:#084A5C;
 }
 
+#pageD {
+    color:#084A5C;
+}
+
+#pageInstructions {
+    color:#084A5C;
+}
 
 /* -- Welcome Area -- */
 
