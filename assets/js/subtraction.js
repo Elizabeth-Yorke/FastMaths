@@ -77,3 +77,74 @@ function checkSubtractionAnswer() {
     runSubtractionGame(calculatedAnswer[1]);
 
 }
+
+/**
+ * Timer to counts down to 0.
+ */
+
+function startTimer(duration, display) {
+    let timer = duration, minutes, seconds;
+    setInterval(function () {
+        minutes = parseInt(timer / 60, 10)
+        seconds = parseInt(timer % 60, 10);
+
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+        display.textContent = minutes + ":" + seconds;
+
+        if (--timer < 0) {
+            timer = 0;
+            let positiveC = document.getElementById("positiveC").innerText;
+            let negativeC = document.getElementById("negativeC").innerText;
+            alert(`Your time is up! You got ${positiveC} right and ${negativeC} wrong.`);
+            location.reload();
+        }
+    }, 1000);
+}
+
+/**
+ * Novice Timer to start at 80seconds on click
+ */
+
+noviceTimerC.onclick = function () {
+    let time = 80, // time in seconds here
+        display = document.querySelector('#noviceTimerC');
+    startTimer(time, display);
+    timers = document.querySelectorAll('.timer');
+    console.log("timers", timers);
+    timers.forEach((timer) => {        
+        timer.setAttribute("disabled", "");
+    });
+};
+
+/**
+ * Intermediate Timer to start at 40 seconds on click
+ */
+
+adeptTimerC.onclick = function () {
+    let time = 40, // time in seconds here
+        display = document.querySelector('#adeptTimerC');
+    startTimer(time, display);
+    timers = document.querySelectorAll('.timer');
+    console.log("timers", timers);
+    timers.forEach((timer) => {        
+        timer.setAttribute("disabled", "");
+    });
+};
+
+/**
+ * Advanced Timer to start at 20 seconds on click
+ */
+
+advancedTimerC.onclick = function () {
+    let time = 20, // time in seconds here
+        display = document.querySelector('#advancedTimerC');
+    startTimer(time, display);
+    timers = document.querySelectorAll('.timer');
+    console.log("timers", timers);
+    timers.forEach((timer) => {        
+        timer.setAttribute("disabled", "");
+    });
+};
+

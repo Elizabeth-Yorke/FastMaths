@@ -77,3 +77,74 @@ function checkAdditionAnswer() {
     runAdditionGame(calculatedAnswer[1]);
 
 }
+
+/**
+ * Timer to counts down to 0.
+ */
+
+function startTimer(duration, display) {
+    let timer = duration, minutes, seconds;
+    setInterval(function () {
+        minutes = parseInt(timer / 60, 10)
+        seconds = parseInt(timer % 60, 10);
+
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+        display.textContent = minutes + ":" + seconds;
+
+        if (--timer < 0) {
+            timer = 0;
+            let positiveB = document.getElementById("positiveB").innerText;
+            let negativeB = document.getElementById("negativeB").innerText;
+            alert(`Your time is up! You got ${positiveB} right and ${negativeB} wrong.`);
+            location.reload();
+        }
+    }, 1000);
+}
+
+/**
+ * Novice Timer to start at 80seconds on click
+ */
+
+noviceTimerB.onclick = function () {
+    let time = 80, // time in seconds here
+        display = document.querySelector('#noviceTimerB');
+    startTimer(time, display);
+    timers = document.querySelectorAll('.timer');
+    console.log("timers", timers);
+    timers.forEach((timer) => {        
+        timer.setAttribute("disabled", "");
+    });
+};
+
+/**
+ * Intermediate Timer to start at 40 seconds on click
+ */
+
+adeptTimerB.onclick = function () {
+    let time = 40, // time in seconds here
+        display = document.querySelector('#adeptTimerB');
+    startTimer(time, display);
+    timers = document.querySelectorAll('.timer');
+    console.log("timers", timers);
+    timers.forEach((timer) => {        
+        timer.setAttribute("disabled", "");
+    });
+};
+
+/**
+ * Advanced Timer to start at 20 seconds on click
+ */
+
+advancedTimerB.onclick = function () {
+    let time = 20, // time in seconds here
+        display = document.querySelector('#advancedTimerB');
+    startTimer(time, display);
+    timers = document.querySelectorAll('.timer');
+    console.log("timers", timers);
+    timers.forEach((timer) => {        
+        timer.setAttribute("disabled", "");
+    });
+};
+
