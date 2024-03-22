@@ -28,8 +28,8 @@ function runMultiplicationGame() {
     let firstNumber = Math.floor(Math.random() * 11)+1;
     let secondNumber = Math.floor(Math.random() * 11)+1;
 
-    document.getElementById('partA').textContent = firstNumber;
-    document.getElementById('partB').textContent = secondNumber;
+    document.getElementById('partA1').textContent = firstNumber;
+    document.getElementById('partA2').textContent = secondNumber;
 
 }
 
@@ -42,13 +42,13 @@ function runMultiplicationGame() {
 function checkMultiplicationAnswer() {
 
     // Reads generated question
-    let partA = parseInt(document.getElementById('partA').innerText);
-    let partB = parseInt(document.getElementById('partB').innerText);
-    console.log(partA);
-    console.log(partB);
+    let partA1 = parseInt(document.getElementById('partA1').innerText);
+    let partA2 = parseInt(document.getElementById('partA2').innerText);
+    console.log(partA1);
+    console.log(partA2);
 
     // Calculates correct answer
-    let calculatedAnswer = partA * partB;
+    let calculatedAnswer = partA1 * partA2;
     console.log(calculatedAnswer);
 
     // Reads user answer

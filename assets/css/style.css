@@ -124,7 +124,7 @@ h1, h2, h3, h4, h5 {
     margin: 0;
 }
 
-#questionA {
+.question {
     margin: 5px;
     height: 50px;
     width: 50px;
@@ -154,7 +154,7 @@ h1, h2, h3, h4, h5 {
     margin: 0;
 }
 
-#answer-box-A{
+.answer-box{
     
     margin-top: 0;
     text-align: center;
@@ -163,7 +163,7 @@ h1, h2, h3, h4, h5 {
     width: 120px;
 }
 
-#submitA {
+.submit {
     background-color: #1F0229 !important;
     color:#E8C4F5 !important;
 }
