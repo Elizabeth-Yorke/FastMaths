@@ -48,89 +48,87 @@
                 <a class="nav-link" id="pageC" href="subtraction.html">Subtraction</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" id="pageD" href="division.html">Division</a>
+                <a class="nav-link active" aria-current="page" id="pageD" href="division.html">Division</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" id="pageInstructions" href="instructions.html">Instructions</a>
+                <a class="nav-link" id="pageInstructions" href="instructions.html">Instructions</a>
               </li>
             </ul>
           </div>
         </div>
-      </nav>
+    </nav>
 
 <!-- Game -->
 
-<section>
-    <div class="color-scheme-ax">
-        <a class="navbar-brand" href="index.html"><h1 class="main-title">Fast Maths</h1></a>
-        <h2 id="instructions-title">Instructions</h2>
-        <p class="instructions">Click on the lightening bolt. A question will appear.</p>
-        <p class="instructions">Answer the question. Press submit.</p>
-        <p class="instructions">Repeat.</p>
-    </div>
-</section>
+<div class="row g-0">
+    <div class="col-md-6 game-area color-scheme-ax">
+        <a class="navbar-brand" href="index.html"><h1 class="main-title">Speed Division</h1></a>
+        <section>
+		<div class="controls-area">
+			<button id="questionD" class="btn btn-outline-light btn-lg clickOn question">
+				<i class="fa-solid fa-bolt icon"></i>
+			</button>
+		</div>
+        </section>
 
-<!-- Example Questions -->
-
-<section>
-    <div class="color-scheme-ay">
-        <h3 id="examples-title">Example Questions</h3>
-        <h4 class="examples-subtitle">Example 1</h4>
-        <p class="examples">2 + 5</p>
-        <p class="examples">Answer = 7</p>
-        <h4 class="examples-subtitle">Example 2</h4>
-        <p class="examples">2 x 5</p>
-        <p class="examples">Answer = 10</p>
-        <h4 class="examples-subtitle">Example 3</h4>
-        <p class="examples">10 - 2</p>
-        <p class="examples">Answer = 8</p>
-        <h4 class="examples-subtitle">Example 4</h4>
-        <p class="examples">10 divided by 2</p>
-        <p class="examples">Answer = 5</p>
-    </div>
-</section>
-
-<!-- Set the timer -->
+<!-- Question Area -->
 
 <section>
-    <div class="color-scheme-ax">
-        <h3 class="timer-subtitle">Want to challenge yourself?</h3>
-        <p class="timer-script">Choose a difficulty level and click once on the level name.</p>
-        <p class="timer-script">Your time will begin as soon as you click on the timer.</p>
-        <p class="timer-script">Click on the lightening bolt as quickly as you can.</p>
-        <p class="timer-script">See how many questions you can complete before your time is up!</p>
+    <div class="question-area">
+        <h3 class="question-title">Question</h3>
+        <div class="question-div">
+        <span id="partD1">0</span>                
+        <span><i class="fa-solid fa-divide"></i></span>
+        <span id="partD2">0</span>
+        <span>=</span>
+        <input id="answer-box-D" class="answer-box" type="number" placeholder="">
+        <button id="submitD" class="btn btn-outline-dark clickOn submit" value="submit">Submit</button>
+        </div>
     </div>
-</section>
-
-<!-- Restart -->
-
-<section>
-    <div class="color-scheme-ay">
-        <h3 id="restart">Restarting</h3>
-        <p class="restart-text">To reset the scoreboard, and restart your game, simply press the reset button.</p>
+    </section>
     </div>
-</section>
 
-<!-- Enjoy your game -->
+<!-- Timer -->
 
-<section>
-    <div class="color-scheme-ax">
-        <h3 id="enjoy">Enjoy your game!</h3>
+    <div class="col-md-6 color-scheme-ay">
+        <section>
+        <div class="row timer-row g-0">
+            <div class="col-md-4 timer-area color-scheme-ax">
+                <button class="timer clickOn novice-timer" id="timerDisplayNovice" data-type="timer"><h4>Novice</h4></button>
+            </div>
+            <div class="col-md-4 timer-area color-scheme-by">
+                <button class="timer clickOn adept-timer" id="timerDisplayIntermediate" data-type="timer"><h4>Adept</h4></button>
+            </div>
+            <div class="col-md-4 timer-area color-scheme-ax">
+                <button class="timer clickOn advanced-timer" id="timerDisplayAdvanced" data-type="timer"><h4>Advanced</h4></button>
+            </div>            
+        </div>
+        </section>
+
+<!-- Scores -->
+
+        <section>
+            <div class="score-area color-scheme-ay">
+                <h3 class="scores-title">Scores</h3>
+                <p class="scores">Correct Answers <span class="positive-score" id="positiveD">0</span></p>
+                <p class="scores">Incorrect Answers<span class="negative-score" id="negativeD">0</span></p>
+            </div>
+        </section>
     </div>
-</section>
 
 <!-- Footer -->
 
 <footer>
     <section>
     <div class="row">
-        <div class="col-md-4 footer-top color-scheme-by">
+        <div class="col-md-3 footer-top color-scheme-bx">
             <p class="review">Review Us</p>
             <div class="stars"><i class="fa-solid fa-star star1"></i><i class="fa-solid fa-star star2"></i></i><i class="fa-solid fa-star star3"></i><i class="fa-solid fa-star star4"></i><i class="fa-solid fa-star star5"></i></div>
         </div>
-        <div class="col-md-4 footer-top copyright color-scheme-bx">Copyright 2024 <i class="fa-regular fa-copyright"></i></div>
-        <div class="col-md-4 footer-top social media color-scheme-by">
-            <p>Share your progress on Social Media</p>
+        <div class="col-md-3 color-scheme-by reset"><button id="reset" type="button" data-type="reset" class="btn btn-outline-dark clickOn reset" value="submit">Reset Game</button></div>
+        <div class="col-md-3 footer-top copyright color-scheme-bx">Copyright 2024 <i class="fa-regular fa-copyright"></i></div>
+        <div class="col-md-3 footer-top social media color-scheme-by">
+            <p>Share your progress</p>
             <div><a class="footer-links" href="https://www.tiktok.com/" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
                 <a class="footer-links" href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
                 <a class="footer-links" href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
@@ -140,5 +138,6 @@
     </section>
 </footer>
 
+    <script src="assets/js/division.js"></script>
 </body>
 </html>
