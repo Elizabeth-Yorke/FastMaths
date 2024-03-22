@@ -13,6 +13,8 @@ document.addEventListener("DOMContentLoaded", function(){
                 runMultiplicationGame();
             } else if (this.id === "submitA") {
                 checkMultiplicationAnswer();
+            } else if (this.getAttribute("data-type") === "timer") {
+                startTimer(clickOn.id);
             }
         }
     )}
@@ -61,13 +63,13 @@ function checkMultiplicationAnswer() {
 
     // If user answer is correct positive score increases
     if (rightAnswer) {
-        let positiveTally = parseInt(document.getElementById("positive-score").innerText);
-        document.getElementById("positive-score").innerText = ++positiveTally;
+        let positiveTally = parseInt(document.getElementById("positiveA").innerText);
+        document.getElementById("positiveA").innerText = ++positiveTally;
 
     // If user answer is not correct negative score increases
     } else {
-        let negativeTally = parseInt(document.getElementById("negative-score").innerText);
-        document.getElementById("negative-score").innerText = ++negativeTally;
+        let negativeTally = parseInt(document.getElementById("negativeA").innerText);
+        document.getElementById("negativeA").innerText = ++negativeTally;
     }
 
     //clears the answer box
@@ -77,3 +79,73 @@ function checkMultiplicationAnswer() {
     runMultiplicationGame(calculatedAnswer[1]);
 
 }
+
+/**
+ * Timer to counts down to 0.
+ */
+
+function startTimer(duration, display) {
+    let timer = duration, minutes, seconds;
+    setInterval(function () {
+        minutes = parseInt(timer / 60, 10)
+        seconds = parseInt(timer % 60, 10);
+
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+        display.textContent = minutes + ":" + seconds;
+
+        if (--timer < 0) {
+            timer = 0;
+            let positiveA = document.getElementById("positiveA").innerText;
+            let negativeA = document.getElementById("negativeA").innerText;
+            alert(`Your time is up! You got ${positiveA} right and ${negativeA} wrong.`);
+            location.reload();
+        }
+    }, 1000);
+}
+
+/**
+ * Novice Timer to start at 80seconds on click
+ */
+
+noviceTimerA.onclick = function () {
+    let time = 80, // time in seconds here
+        display = document.querySelector('#noviceTimerA');
+    startTimer(time, display);
+    timers = document.querySelectorAll('.timer');
+    console.log("timers", timers);
+    timers.forEach((timer) => {        
+        timer.setAttribute("disabled", "");
+    });
+};
+
+/**
+ * Intermediate Timer to start at 40 seconds on click
+ */
+
+adeptTimerA.onclick = function () {
+    let time = 40, // time in seconds here
+        display = document.querySelector('#adeptTimerA');
+    startTimer(time, display);
+    timers = document.querySelectorAll('.timer');
+    console.log("timers", timers);
+    timers.forEach((timer) => {        
+        timer.setAttribute("disabled", "");
+    });
+};
+
+/**
+ * Advanced Timer to start at 20 seconds on click
+ */
+
+advancedTimerA.onclick = function () {
+    let time = 20, // time in seconds here
+        display = document.querySelector('#advancedTimerA');
+    startTimer(time, display);
+    timers = document.querySelectorAll('.timer');
+    console.log("timers", timers);
+    timers.forEach((timer) => {        
+        timer.setAttribute("disabled", "");
+    });
+};
