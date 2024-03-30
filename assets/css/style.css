@@ -101,7 +101,7 @@ h1, h2, h3, h4, h5 {
 /* -- Welcome Area -- */
 
 .main-content {
-    min-height: calc(100vh - 144px);
+    min-height: calc(100vh - 104px);
 }
 
 /* -- Select Page Choices -- */
