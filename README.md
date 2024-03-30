@@ -3,11 +3,10 @@
 
 Welcome to Fast Maths. This is an interactive maths game. 
 
-A live version of the site can be viewed from here.
+A live version of the site can be viewed from [here.](https://elizabeth-yorke.github.io/FastMaths/index.html)
 
-A mock-up image of Speed Maths interactive game, using the "Am I Responsive" site can be viewed [here.](https://amiresponsive.co.uk/)
-
-screenshot.
+A mock-up image of Speed Maths interactive game, using the "Am I Responsive" site can be viewed [here.](https://amiresponsive.co.uk/).
+![Am I responsive image](assets/images/am-i-responsive.png)
 
 ## UX Design
 ### Wireframes
@@ -21,7 +20,10 @@ My wireframe was created using [Balsamiq.](https://balsamiq.com/) Here are scree
 
 I used the UX Design section of [Adobe Color](https://color.adobe.com/trends/Ui/ux) to identify the most current user friendly colour palates available. I also looked at their game [design section](https://color.adobe.com/trends/Game-design) of Adobe Colour. I noticed that there was an abundance of dark purple in both sections, so I chose a dark purple based colour palate. I then checked this palate using [WebAIM contrast checker](https://webaim.org/resources/contrastchecker/), and made the shades lighter and darker to ensure I had a colour scheme that included a number of high contrast pairings. The palate was created by Adobe Colour and contained the following colours:
 
-#7fffd4 - aquamarine  #084A5C - dark teal  #1F0229 - dark purple #FFFF00 - yellow
+#1F0229 Dark purple
+#E8C4F5 Light purple
+#084A5C Dark teal
+#B6E7F5 Light teal
 
 ### Fonts
 
