@@ -172,5 +172,4 @@ Here is a list of websites I used to create this project:
     I would like to thank the Code Institute tutor team for their assistance.
     I would like to thank the Code Institute Slack community for the their support.
     I would like to thank my husband Kieron Yorke, for all his help.
-    I would like to thank Delyth Jennings, who has been particularly helpful on Slack.
 

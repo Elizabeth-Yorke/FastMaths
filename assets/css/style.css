@@ -104,6 +104,12 @@ h1, h2, h3, h4, h5 {
     min-height: calc(100vh - 194px);
 }
 
+.welcome-instructions {
+    padding-bottom: 5px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
 /* -- Select Page Choices -- */
 
 .choices {
@@ -125,6 +131,11 @@ h1, h2, h3, h4, h5 {
     width: 80%;
     font-size: x-large;
 } 
+
+#to-instructions {
+    text-align: center;
+    padding-top: 15px;
+}
 
 .to-instructions {
     background-color:#E8C4F5;
@@ -267,6 +278,10 @@ h1, h2, h3, h4, h5 {
     text-align: center;
     font-size: 1rem;
     padding: 20px 0 20px 0;
+}
+
+.enjoy-footer {
+
 }
 
 .review {
