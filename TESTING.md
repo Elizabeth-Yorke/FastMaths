@@ -105,6 +105,7 @@ I encountered a few bugs, particularly in during the testing phase. Here is what
 | Bug | Solution |
 | --- | --- |
 | The page wasn't reaching the bottom of the screen. | I added calc() |
+| calc() made the phone pages very long. | I tried different combinations of calc(), media queries and bootstrap columns until everything aligned perfectly. |
 | There was some white space due to margins and padding in some of the earlier commits. | I used the dev tools to inspect and figure out the problem, and deleted unnecessary padding. |
 | I had forgotten some aria-labels | I added the missing labels. |
 | The scores were continuing on from last game. | I added a page reload function to the end of the timer to clear all the scores. |
@@ -113,7 +114,6 @@ I encountered a few bugs, particularly in during the testing phase. Here is what
 
 | Bug | Comments |
 | --- | --- |
-| calc() causes long gaps on the phone version. | I will try to fix this before I hand in. |
 | A user may get the same question multiple times in one game. | This is because the numbers chosen are entirely random. |
 | The comment box needs to be clicked several times before it disappears in a number of browsers. | As this is not the case in the browser I usually work in, finding this bug has been tricky. |
 | If you change from the untimed game to the timed game, your score builds on the score you already had, unless you choose to reset it. | I'm not sure if this is a bug or an extra option for the user, so I haven't decided what to do about it. |
