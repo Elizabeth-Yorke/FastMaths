@@ -198,11 +198,12 @@ h1, h2, h3, h4, h5 {
     width: 50px;
     text-align: center;
     font-size: 20px;
+    background-color: #E8C4F5;
 }
 
 .icon {
-    color:#E8C4F5 !important;
-    border-color: #E8C4F5 !important;
+    background-color: #E8C4F5;
+    color:#1F0229;
 }
 
 /* -- Question Area -- */
@@ -248,6 +249,8 @@ h1, h2, h3, h4, h5 {
     height: 100%;
     width: 80%;
     font-size: x-large;
+    background-color: #1F0229;
+    color:#E8C4F5;
 } 
 
 /* -- Scores Area -- */
@@ -381,4 +384,10 @@ h1, h2, h3, h4, h5 {
     height: 200px;
     width: 200px;
     font-size: 48px;
+}
+
+@media screen and (max-width: 992px) {
+    .main-content {
+        min-height: 0;
+    }
 }
