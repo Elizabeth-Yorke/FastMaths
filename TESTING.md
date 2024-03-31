@@ -88,15 +88,15 @@ I tested my deployed project using using PageSpeed Insights via web.dev [PageSpe
 
 | User |User Story|Answer|Screenshot|
 | --- | --- | --- | --- |
-| New site user | I would like a game with simple instructions that are easy to follow. |Details.| [screenshot](filepath)|
-| New site user | I would like a game that is quick to play. |Details.| [screenshot](filepath)|
-| New site user | I would like instant feedback so I know if I'm getting things right or wrong. |Details.| [screenshot](filepath)|
-| Returning site user | I would like a game that feels like I'm using my brain a bit, but isn't too hard. |Details.| [screenshot](filepath)|
-| Returning site user | I would like a game in which I can see myself improving as I play more. |Details.| [screenshot](filepath)|
-| Returning site user | I would like there to be new questions every time I play. |Details.| [screenshot](filepath)|
-| Site Owner | I would like people to want to use this game. |Details.| [screenshot](filepath)|
-| Site Owner | I would like people to leave good reviews about this game. |Details.| [screenshot](filepath)|
-| Site Owner | I would like this game to respond smoothly. |Details.| [screenshot](filepath)|
+| New site user | I would like a game with simple instructions that are easy to follow. |This game has easy instructions.| [screenshot](assets/documents/user-stories/user-story-A.png)|
+| New site user | I would like a game that is quick to play. | This game can be played in as little as 20 seconds.| [screenshot](assets/documents/user-stories/user-story-B.png)|
+| New site user | I would like instant feedback so I know if I'm getting things right or wrong. |Your answers are instantly checked and a tally of correct and incorrect scores updates as you play.| [screenshot](assets/documents/user-stories/user-story-C.png)|
+| Returning site user | I would like a game that feels like I'm using my brain a bit, but isn't too hard. | This game allows you to answer maths questions which all have integer answers.| [screenshot](assets/documents/user-stories/user-story-D.png)|
+| Returning site user | I would like a game in which I can see myself improving as I play more. |A pop-up box showing your final scores appears when your time is up. The user will know istantly if this is better than previous attempts by looking at the numbers.| [screenshot](assets/documents/user-stories/user-story-E.png)|
+| Returning site user | I would like there to be new questions every time I play. | You are provided with a new question every time you click on the lightening bolt or the submit button. | [screenshot](assets/documents/user-stories/user-story-F.png)|
+| Site Owner | I would like people to want to use this game. | This user story is difficult to answer as very few people have seen this game.| All the people I have asked to test it for me have wanted to have a go at it.|
+| Site Owner | I would like people to leave good reviews about this game. | Links to social media are included in the footer to encourage people to share progress and leave reviews.| [screenshot](assets/documents/user-stories/user-story-G.png)|
+| Site Owner | I would like this game to respond smoothly. | This site works smoothly according to pageSpeed.| [screenshot](assets/documents/user-stories/user-story-H.png)|
 
 ## Debugging
 
@@ -104,12 +104,16 @@ I encountered a few bugs, particularly in during the testing phase. Here is what
 
 | Bug | Solution |
 | --- | --- |
-| Bug | Solution |
-
-
+| The page wasn't reaching the bottom of the screen. | I added calc() |
+| There was some white space due to margins and padding in some of the earlier commits. | I used the dev tools to inspect and figure out the problem, and deleted unnecessary padding. |
+| I had forgotten some aria-labels | I added the missing labels. |
+| The scores were continuing on from last game. | I added a page reload function to the end of the timer to clear all the scores. |
 
 ## Unfixed Bugs
 
 | Bug | Comments |
 | --- | --- |
-| Bug | Comments |
+| calc() causes long gaps on the phone version. | I will try to fix this before I hand in. |
+| A user may get the same question multiple times in one game. | This is because the numbers chosen are entirely random. |
+| The comment box needs to be clicked several times before it disappears in a number of browsers. | As this is not the case in the browser I usually work in, finding this bug has been tricky. |
+| If you change from the untimed game to the timed game, your score builds on the score you already had, unless you choose to reset it. | I'm not sure if this is a bug or an extra option for the user, so I haven't decided what to do about it. |
