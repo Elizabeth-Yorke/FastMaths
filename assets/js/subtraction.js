@@ -13,6 +13,8 @@ document.addEventListener("DOMContentLoaded", function(){
                 runSubtractionGame();
             } else if (this.id === "submitC") {
                 checkSubtractionAnswer();
+            } else if (this.id === "resetC") {
+                location.reload();
             }
         }
     )}

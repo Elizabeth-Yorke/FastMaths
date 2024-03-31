@@ -15,6 +15,8 @@ document.addEventListener("DOMContentLoaded", function(){
                 checkMultiplicationAnswer();
             } else if (this.getAttribute("data-type") === "timer") {
                 startTimer(clickOn.id);
+            } else if (this.id === "resetA") {
+                location.reload();
             }
         }
     )}

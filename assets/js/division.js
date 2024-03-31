@@ -13,6 +13,8 @@ document.addEventListener("DOMContentLoaded", function(){
                 runDivisionGame();
             } else if (this.id === "submitD") {
                 checkDivisionAnswer();
+            } else if (this.id === "resetD") {
+                location.reload();
             }
         }
     )}
@@ -77,7 +79,6 @@ function checkDivisionAnswer() {
     runDivisionGame(calculatedAnswer[1]);
 
 }
-
 
 /**
  * Timer to counts down to 0.

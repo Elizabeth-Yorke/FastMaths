@@ -13,6 +13,8 @@ document.addEventListener("DOMContentLoaded", function(){
                 runAdditionGame();
             } else if (this.id === "submitB") {
                 checkAdditionAnswer();
+            } else if (this.id === "resetB") {
+                location.reload();
             }
         }
     )}
