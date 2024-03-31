@@ -243,33 +243,7 @@ h1, h2, h3, h4, h5 {
     text-align: center;
 }
 
-.timer-area {
-    text-align: center;
-    padding-bottom: 20px;
-    padding-top: 20px;
-}
-
-.novice-timer {
-    background-color:#E8C4F5;
-    color:#1F0229;
-    padding: 5px;
-    height: 100%;
-    width: 80%;
-    font-size: x-large;
-} 
-
-.adept-timer {
-    background-color:#084A5C;
-    color:#B6E7F5;
-    padding: 5px;
-    height: 100%;
-    width: 80%;
-    font-size: x-large;
-} 
-
-.advanced-timer {
-    background-color:#E8C4F5;
-    color:#1F0229;
+.timer {
     padding: 5px;
     height: 100%;
     width: 80%;
