@@ -376,14 +376,19 @@ h1, h2, h3, h4, h5 {
     padding: 20px;
 }
 
-.to-home {
-    background-color:#E8C4F5;
-    color:#1F0229;
+#to-home {
+    text-align:center;
     border-radius: 50%;
-    padding: 5px;
     height: 200px;
     width: 200px;
-    font-size: 48px;
+}
+
+#bolt {
+    padding-top: 45px;
+}
+
+.circle-row {
+    padding-bottom: 20px;
 }
 
 @media screen and (max-width: 992px) {
