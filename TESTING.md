@@ -10,20 +10,32 @@ The following validation has been done using the recommended [HTML W3C Validator
 
 | Page | W3C URL | Screenshot | Notes |
 | --- | --- | --- | --- |
-| Home | [W3C] (weblink)| ![screenshot](file pathway) | No errors: Initial errors found and fixed.|
-| Instructions | [W3C] (weblink)| ![screenshot](file pathway) | No errors: Initial errors found and fixed.|
-
+| Home | [W3C] (https://validator.w3.org/nu/?doc=https%3A%2F%2Felizabeth-yorke.github.io%2FFastMaths%2Findex.html)| ![screenshot](assets/documents/validation/index.html.png) | No errors.|
+| Multiplication| [W3C] (https://validator.w3.org/nu/?doc=https%3A%2F%2Felizabeth-yorke.github.io%2FFastMaths%2Fmultiplication.html)| ![screenshot](assets/documents/validation/multiplication.html.png) | No errors.|
+| Addition | [W3C] (https://validator.w3.org/nu/?doc=https%3A%2F%2Felizabeth-yorke.github.io%2FFastMaths%2Faddition.html)| ![screenshot](assets/documents/validation/addition.html.png) | No errors.|
+| Subtraction | [W3C] (https://validator.w3.org/nu/?doc=https%3A%2F%2Felizabeth-yorke.github.io%2FFastMaths%2Fsubtraction.html)| ![screenshot](assets/documents/validation/subtraction.html.png) | No errors.|
+| Division | [W3C] (https://validator.w3.org/nu/?doc=https%3A%2F%2Felizabeth-yorke.github.io%2FFastMaths%2Fdivision.html)| ![screenshot](assets/documents/validation/division.html.png) | No errors.|
+| Instructions | [W3C] (https://validator.w3.org/nu/?doc=https%3A%2F%2Felizabeth-yorke.github.io%2FFastMaths%2Finstructions.html)| ![screenshot](assets/documents/validation/instructions.html.png) | No errors.|
+| 404 | [W3C] (https://validator.w3.org/nu/?doc=https%3A%2F%2Felizabeth-yorke.github.io%2FFastMaths%2F404.html)| ![screenshot](assets/documents/validation/404.html.png) | No errors.|
 
 ### CSS
 
 The following validation has been done using the recommended [The W3C CSS Validaton Service](https://jigsaw.w3.org/css-validator/validator) using the live, deployed site using the site links shown below.
 
 | Page | W3C URL | Screenshot | Notes |
-| style.css| [W3C] (weblink) | ![screenshot](file pathway) | No errors: Initial errors found and fixed.|
+| style.css| [W3C] ([weblink](https://jigsaw.w3.org/css-validator/validator)) | ![screenshot](assets/documents/validation/style.css.png) | No errors: Initial errors found and fixed.|
 
 ### JavaScript
 
-TBC
+The following validation has been done using [jshint.com](https://jshint.com/) using the live, deployed site using the site links shown below.
+
+| Page | W3C URL | Screenshot | Notes |
+| multiplication.js| [W3C] ([weblink](https://jshint.com/)) | ![screenshot](assets/documents/validation/multiplication.js.png) | 28 warnings explaining that various forms of javaScript are only available in particular JS extensions, 1 warning that functions declared within loops referencing an outer scoped variable may lead to confusing semantics.|
+| addition.js| [W3C] ([weblink](https://jshint.com/)) | ![screenshot](assets/documents/validation/addition.js.png) | 28 warnings explaining that various forms of javaScript are only available in particular JS extensions, 1 warning that functions declared within loops referencing an outer scoped variable may lead to confusing semantics.|
+| subtraction.js| [W3C] ([weblink](https://jshint.com/)) | ![screenshot](assets/documents/validation/subtraction.js.png) | 28 warnings explaining that various forms of javaScript are only available in particular JS extensions, 1 warning that functions declared within loops referencing an outer scoped variable may lead to confusing semantics.|
+| division.js| [W3C] ([weblink](https://jshint.com/)) | ![screenshot](assets/documents/validation/division.js.png) | 28 warnings explaining that various forms of javaScript are only available in particular JS extensions, 1 warning that functions declared within loops referencing an outer scoped variable may lead to confusing semantics.|
+
+As all forms of javaScript refered to in these warnings were recommended within the course, I have decided to ignore the warnings for now.
 
 ## Testing Browser Compatibility
 

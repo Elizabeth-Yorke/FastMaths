@@ -17,8 +17,8 @@ document.addEventListener("DOMContentLoaded", function(){
                 location.reload();
             }
         }
-    )}
-})
+    );}
+});
 
 /**
  * Generates integers between 1 and 12
@@ -87,7 +87,7 @@ function checkDivisionAnswer() {
 function startTimer(duration, display) {
     let timer = duration, minutes, seconds;
     setInterval(function () {
-        minutes = parseInt(timer / 60, 10)
+        minutes = parseInt(timer / 60, 10);
         seconds = parseInt(timer % 60, 10);
 
         minutes = minutes < 10 ? "0" + minutes : minutes;
@@ -109,11 +109,11 @@ function startTimer(duration, display) {
  * Novice Timer to start at 80seconds on click
  */
 
+let noviceTimerD = document.querySelector('#noviceTimerD');
 noviceTimerD.onclick = function () {
-    let time = 80, // time in seconds here
-        display = document.querySelector('#noviceTimerD');
-    startTimer(time, display);
-    timers = document.querySelectorAll('.timer');
+    let time = 80; // time in seconds here
+    startTimer(time, noviceTimerD);
+    let timers = document.querySelectorAll('.timer');
     console.log("timers", timers);
     timers.forEach((timer) => {        
         timer.setAttribute("disabled", "");
@@ -124,11 +124,11 @@ noviceTimerD.onclick = function () {
  * Intermediate Timer to start at 40 seconds on click
  */
 
+let adeptTimerD = document.querySelector('#adeptTimerD');
 adeptTimerD.onclick = function () {
-    let time = 40, // time in seconds here
-        display = document.querySelector('#adeptTimerD');
-    startTimer(time, display);
-    timers = document.querySelectorAll('.timer');
+    let time = 40; // time in seconds here
+    startTimer(time, adeptTimerD);
+    let timers = document.querySelectorAll('.timer');
     console.log("timers", timers);
     timers.forEach((timer) => {        
         timer.setAttribute("disabled", "");
@@ -139,11 +139,11 @@ adeptTimerD.onclick = function () {
  * Advanced Timer to start at 20 seconds on click
  */
 
+let advancedTimerD = document.querySelector('#advancedTimerD');
 advancedTimerD.onclick = function () {
-    let time = 20, // time in seconds here
-        display = document.querySelector('#advancedTimerD');
-    startTimer(time, display);
-    timers = document.querySelectorAll('.timer');
+    let time = 20; // time in seconds here
+    startTimer(time, advancedTimerD);    
+    let timers = document.querySelectorAll('.timer');
     console.log("timers", timers);
     timers.forEach((timer) => {        
         timer.setAttribute("disabled", "");
