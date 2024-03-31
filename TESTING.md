@@ -73,10 +73,10 @@ I tested my deployed project using using PageSpeed Insights via web.dev [PageSpe
 | --- | --- | --- | --- | --- |
 |Home|Mobile|[PageSpeed URL](https://pagespeed.web.dev/analysis/https-elizabeth-yorke-github-io-FastMaths-index-html/0h04w0bo3d?form_factor=mobile)|[screenshot](assets/documents/pagespeed/)|Biggest issue bootstrap and fontawesome.|
 |Home|Desktop|[PageSpeed URL](https://pagespeed.web.dev/analysis/https-elizabeth-yorke-github-io-FastMaths-index-html/0h04w0bo3d?form_factor=mobile)|[screenshot](assets/documents/pagespeed/)|Biggest issue bootstrap and fontawesome.|
-|Multiplication|Mobile|[PageSpeed URL]()|[screenshot](assets/documents/pagespeed/)|Biggest issue bootstrap and fontawesome.|
-|Multiplication|Desktop|[PageSpeed URL]()|[screenshot](assets/documents/pagespeed/)|Biggest issue bootstrap and fontawesome.|
-|Addition|Mobile|[PageSpeed URL]()|[screenshot](assets/documents/pagespeed/)|Biggest issue bootstrap and fontawesome.|
-|Addition|Desktop|[PageSpeed URL]()|[screenshot](assets/documents/pagespeed/)|Biggest issue bootstrap and fontawesome.|
+|Multiplication|Mobile|[PageSpeed URL](https://pagespeed.web.dev/analysis/https-elizabeth-yorke-github-io-FastMaths-multiplication-html/wjri8egdiv?form_factor=mobile)|[screenshot](assets/documents/pagespeed/)|Biggest issue bootstrap and fontawesome.|
+|Multiplication|Desktop|[PageSpeed URL](https://pagespeed.web.dev/analysis/https-elizabeth-yorke-github-io-FastMaths-multiplication-html/wjri8egdiv?form_factor=desktop)|[screenshot](assets/documents/pagespeed/)|Biggest issue bootstrap and fontawesome.|
+|Addition|Mobile|[PageSpeed URL](https://pagespeed.web.dev/analysis/https-elizabeth-yorke-github-io-FastMaths-addition-html/pxj49epfmm?form_factor=mobile)|[screenshot](assets/documents/pagespeed/)|Biggest issue bootstrap and fontawesome.|
+|Addition|Desktop|[PageSpeed URL](https://pagespeed.web.dev/analysis/https-elizabeth-yorke-github-io-FastMaths-addition-html/pxj49epfmm?form_factor=desktop)|[screenshot](assets/documents/pagespeed/)|Biggest issue bootstrap and fontawesome.|
 |Subtraction|Mobile|[PageSpeed URL]()|[screenshot](assets/documents/pagespeed/)|Biggest issue bootstrap and fontawesome.|
 |Subtraction|Desktop|[PageSpeed URL]()|[screenshot](assets/documents/pagespeed/)|Biggest issue bootstrap and fontawesome.|
 |Division|Mobile|[PageSpeed URL]()|[screenshot](assets/documents/pagespeed/)|Biggest issue bootstrap and fontawesome.|
