@@ -67,14 +67,22 @@ I used media genesis responsive design checker [Media Genesis responsive design 
 
 ## Testing Website Speed
 
-I tested my deployed project using using PageSpeed Insights via web.dev [PageSpeed](https://pagespeed.web.dev/analysis/https-elizabeth-yorke-github-io-SusieJunes-A/kv7di1miqk?form_factor=mobile)
+I tested my deployed project using using PageSpeed Insights via web.dev [PageSpeed](https://pagespeed.web.dev/analysis/https-elizabeth-yorke-github-io-FastMaths-index-html/lkce88vsfn?form_factor=mobile)
 
 |Page|Screensize|PageSpeed URL|Screenshot|Notes|
 | --- | --- | --- | --- | --- |
-|Home|Mobile|[PageSpeed URL](weblink)|[screenshot](file pathway)|Performs as expected.|
-|Home|Desktop|[PageSpeed URL](weblink)|[screenshot](file pathway)|Performs as expected.|
-|Instructions|Mobile|[PageSpeed URL](weblink)|[screenshot](file pathway)|Performs as expected.|
-|Instructions|Desktop|[PageSpeed URL](weblink)|[screenshot](file pathway)|Performs as expected.|
+|Home|Mobile|[PageSpeed URL](https://pagespeed.web.dev/analysis/https-elizabeth-yorke-github-io-FastMaths-index-html/lkce88vsfn?form_factor=mobile)|[screenshot](assets/documents/pagespeed/)|Biggest issue bootstrap and fontawesome.|
+|Home|Desktop|[PageSpeed URL]()|[screenshot](assets/documents/pagespeed/)|Biggest issue bootstrap and fontawesome.|
+|Multiplication|Mobile|[PageSpeed URL]()|[screenshot](assets/documents/pagespeed/)|Biggest issue bootstrap and fontawesome.|
+|Multiplication|Desktop|[PageSpeed URL]()|[screenshot](assets/documents/pagespeed/)|Biggest issue bootstrap and fontawesome.|
+|Addition|Mobile|[PageSpeed URL]()|[screenshot](assets/documents/pagespeed/)|Biggest issue bootstrap and fontawesome.|
+|Addition|Desktop|[PageSpeed URL]()|[screenshot](assets/documents/pagespeed/)|Biggest issue bootstrap and fontawesome.|
+|Subtraction|Mobile|[PageSpeed URL]()|[screenshot](assets/documents/pagespeed/)|Biggest issue bootstrap and fontawesome.|
+|Subtraction|Desktop|[PageSpeed URL]()|[screenshot](assets/documents/pagespeed/)|Biggest issue bootstrap and fontawesome.|
+|Division|Mobile|[PageSpeed URL]()|[screenshot](assets/documents/pagespeed/)|Biggest issue bootstrap and fontawesome.|
+|Division|Desktop|[PageSpeed URL]()|[screenshot](assets/documents/pagespeed/)|Biggest issue bootstrap and fontawesome.|
+|Instructions|Mobile|[PageSpeed URL]()|[screenshot](assets/documents/pagespeed/)|Biggest issue bootstrap and fontawesome.|
+|Instructions|Desktop|[PageSpeed URL]()|[screenshot](assets/documents/pagespeed/)|Biggest issue bootstrap and fontawesome.|
 
 ## Fullfilling User Story Requirements
 
