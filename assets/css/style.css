@@ -248,6 +248,7 @@ h1, h2, h3, h4, h5 {
     font-size: x-large;
     background-color: #1F0229;
     color:#E8C4F5;
+    font-family: 'Luckiest Guy', cursive;
 } 
 
 /* -- Scores Area -- */
@@ -287,6 +288,8 @@ h1, h2, h3, h4, h5 {
     text-align: center;
     padding: 5px;
     width: 200px;
+    font-family: 'Luckiest Guy', cursive;
+    font-size:x-large;
 }
 
 /* -- Addition Page -- */
