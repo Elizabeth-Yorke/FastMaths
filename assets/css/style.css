@@ -104,6 +104,10 @@ h1, h2, h3, h4, h5 {
     min-height: calc(100vh - 212px);
 }
 
+.main-content-home {
+    min-height: calc(100vh - 212px);
+}
+
 .welcome-instructions {
     padding-bottom: 5px;
     margin-bottom: 0;
@@ -391,7 +395,7 @@ h1, h2, h3, h4, h5 {
     padding-bottom: 20px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
     .main-content {
         min-height: 0;
     }
