@@ -55,15 +55,15 @@ I used media genesis responsive design checker [Media Genesis responsive design 
 
 |Device|Screensize|URL|Screenshot|Notes|
 | --- | --- | --- | --- | --- |
-|Desktop 24"|Screensize 1920x1200|[screenshot]() |Works as expected|
-|Desktop 20"|Screensize 1600x900|[screenshot](file pathway) |Works as expected|
-|Notebook 13"|Screensize 1024x800|[screenshot](file pathway) |Works as expected|
-|Tablet Apple iPad Pro|Screensize 1366x1024|[screenshot](file pathway) |Works as expected|
-|Tablet Amazon Fire|Screensize 768x1024|[screenshot](file pathway) |Works as expected|
-|Tablet Nexus 7|Screensize 600x960|[screenshot](file pathway) |Works as expected|
-|Phone Apple iPhone 7 Plus|Screensize 414x736|[screenshot](file pathway) |Works as expected|
-|Phone Google Pixel|Screensize 411x731|[screenshot](file pathway) |Works as expected|
-|Phone Sony Xperia Z3|Screensize 360x640|[screenshot](file pathway) |Works as expected|
+|Desktop 24"|Screensize 1920x1200|[screenshot](assets/documents/screen-sizes/desktop1920x1200.png) |Works as expected|
+|Desktop 20"|Screensize 1600x900|[screenshot](assets/documents/screen-sizes/desktop1600x900.png) |Works as expected|
+|Notebook 13"|Screensize 1024x800|[screenshot](assets/documents/screen-sizes/notebook1024x800.png) |Works as expected|
+|Tablet Apple iPad Pro|Screensize 1366x1024|[screenshot](assets/documents/screen-sizes/tablet1366x1024.png) |Works as expected|
+|Tablet Amazon Fire|Screensize 768x1024|[screenshot](assets/documents/screen-sizes/tablet768x1024.png) |Works as expected|
+|Tablet Nexus 7|Screensize 600x960|[screenshot](assets/documents/screen-sizes/tablet600x960.png) |Too much blank space due to calc() otherwise working well.|
+|Phone Apple iPhone 7 Plus|Screensize 414x736|[screenshot](assets/documents/screen-sizes/phone414x736.png) |Too much blank space due to calc() otherwise working well.|
+|Phone Google Pixel|Screensize 411x731|[screenshot](assets/documents/screen-sizes/phone411x731.png) |Too much blank space due to calc() otherwise working well.|
+|Phone Sony Xperia Z3|Screensize 360x640|[screenshot](assets/documents/screen-sizes/phone360x640.png) |Too much blank space due to calc() otherwise working well.|
 
 ## Testing Website Speed
 
