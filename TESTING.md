@@ -63,7 +63,7 @@ I used media genesis responsive design checker [Media Genesis responsive design 
 |Tablet Nexus 7|Screensize 600x960|[screenshot](assets/documents/screen-sizes/tablet600x960.png) |Too much blank space due to calc() otherwise working well.|
 |Phone Apple iPhone 7 Plus|Screensize 414x736|[screenshot](assets/documents/screen-sizes/phone414x736.png) |Too much blank space due to calc() otherwise working well.|
 |Phone Google Pixel|Screensize 411x731|[screenshot](assets/documents/screen-sizes/phone411x731.png) |Too much blank space due to calc() otherwise working well.|
-|Phone Sony Xperia Z3|Screensize 360x640|[screenshot](assets/documents/screen-sizes/phone360x640.png) |Too much blank space due to calc() otherwise working well.|
+|Phone Apple iphone5|Screensize 360x640|[screenshot](assets/documents/screen-sizes/phone320x480.png) |Too much blank space due to calc() otherwise working well.|
 
 ## Testing Website Speed
 
