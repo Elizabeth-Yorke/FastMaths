@@ -43,20 +43,19 @@ I've tested my deployed project on multiple browsers to check for compatibility 
 
 | Browser | Screenshot | Notes |
 | --- | --- | --- |
-| Chrome | ![screenshot](file pathway) | Works as expected |
-| Firefox | ![screenshot](file pathway) | Works as expected |
-| Edge | ![screenshot](file pathway) | Minor scaling issues |
-| Brave | ![screenshot](file pathway) | Works as expected |
-| Opera | ![screenshot](file pathway) | Works as expected|
-| Avast | ![screenshot](file pathway) | Works as expected|
+| Chrome | ![index](assets/documents/browser-testing/chrome/index.html.png) ![multiplication](assets/documents/browser-testing/chrome/multiplication.html.png) ![addition](assets/documents/browser-testing/chrome/addition.html.png) ![subtraction](assets/documents/browser-testing/chrome/subtraction.html.png) ![division](assets/documents/browser-testing/chrome/division.html.png) ![instructions](assets/documents/browser-testing/chrome/instructions.html.png) | Works as expected, except that the pop up box needs to be closed several times.|
+| Firefox | ![home](assets/documents/browser-testing/mozilla/index.html.png) ![multiplication](assets/documents/browser-testing/mozilla/multiplication.html.png) ![addition](assets/documents/browser-testing/mozilla/addition.html.png) ![subtraction](assets/documents/browser-testing/mozilla/subtraction.html.png) ![division](assets/documents/browser-testing/mozilla/division.html.png)  ![instructions](assets/documents/browser-testing/mozilla/instructions.html.png)  | Works as expected |
+| Edge | ![i](assets/documents/browser-testing/edge/) [i](assets/documents/browser-testing/edge/) [i](assets/documents/browser-testing/edge/) [i](assets/documents/browser-testing/edge/) [i](assets/documents/browser-testing/edge/) [i](assets/documents/browser-testing/edge/)| Minor scaling issues |
+| Opera | ![index](assets/documents/browser-testing/opera/index.html.png) ![multiplication](assets/documents/browser-testing/opera/multiplication.html.png) ![addition](assets/documents/browser-testing/opera/addition.html.png) ![subtraction](assets/documents/browser-testing/opera/subtraction.html.png) ![division](assets/documents/browser-testing/opera/division.html.png) ![instructions](assets/documents/browser-testing/opera/instructions.html.png) | Works as expected|
+| Avast | ![index](assets/documents/browser-testing/avast/index.html.png) ![multiplication](assets/documents/browser-testing/avast/multiplication.html.png) ![addition](assets/documents/browser-testing/avast/addition.html.png) ![subtraction](assets/documents/browser-testing/avast/subtraction.html.png) ![division](assets/documents/browser-testing/avast/division.html.png) ![instrcutions](assets/documents/browser-testing/avast/instructions.html.png) | Works as expected, except that the pop up box has to be clicked twice before it disappears.|
 
 ## Testing Different Screen Sizes
 
-I used media genesis responsive design checker [Media Genesis responsive design checker] (https://www.responsivedesignchecker.com/checker.php?url=https%3A%2F%2Felizabeth-yorke.github.io%2FSusieJunes-A%2F&width=1400&height=700) to check how responsive this website is. I used the live, deployed site. Links below.
+I used media genesis responsive design checker [Media Genesis responsive design checker] (https://www.responsivedesignchecker.com/checker.php?url=https%3A%2F%2Felizabeth-yorke.github.io%2FFastMaths%2Findex.html&width=1400&height=700) to check how responsive this website is. I used the live, deployed site. Links below.
 
 |Device|Screensize|URL|Screenshot|Notes|
 | --- | --- | --- | --- | --- |
-|Desktop 24"|Screensize 1920x1200|[screenshot](file pathway) |Works as expected|
+|Desktop 24"|Screensize 1920x1200|[screenshot]() |Works as expected|
 |Desktop 20"|Screensize 1600x900|[screenshot](file pathway) |Works as expected|
 |Notebook 13"|Screensize 1024x800|[screenshot](file pathway) |Works as expected|
 |Tablet Apple iPad Pro|Screensize 1366x1024|[screenshot](file pathway) |Works as expected|

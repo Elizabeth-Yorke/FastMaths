@@ -390,3 +390,9 @@ h1, h2, h3, h4, h5 {
 .circle-row {
     padding-bottom: 20px;
 }
+
+@media screen and (max-width: 992px) {
+    .main-content {
+        min-height: 0;
+    }
+}
