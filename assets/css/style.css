@@ -11,7 +11,7 @@ body {
     border: 0;
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, h6 {
     font-family: 'Luckiest Guy', cursive;
 }
 
@@ -115,6 +115,12 @@ h1, h2, h3, h4, h5 {
 }
 
 /* -- Select Page Choices -- */
+
+.select {
+    text-align: center;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: x-large;
+}
 
 .choices {
     text-align: center;
@@ -398,5 +404,12 @@ h1, h2, h3, h4, h5 {
 @media screen and (max-width: 992px) {
     .main-content {
         min-height: 0;
+    }
+}
+
+@media screen and (min-width: 767px) and (max-width: 992px) {
+    .whitespace-cover {
+        background-color: #E8C4F5;
+        height: 200px;
     }
 }
