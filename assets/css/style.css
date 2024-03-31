@@ -119,8 +119,7 @@ h1, h2, h3, h4, h5 {
 
 .choices-area {
     text-align: center;
-    padding-bottom: 20px;
-    padding-top: 20px;
+    padding: 20px;
 }
 
 .choice {
@@ -128,22 +127,21 @@ h1, h2, h3, h4, h5 {
     color:#B6E7F5;
     padding: 5px;
     height: 100%;
-    width: 80%;
     font-size: x-large;
 } 
 
 #to-instructions {
     text-align: center;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding: 0 20px 20px 20px;
+    align-items: center;
 }
 
 .to-instructions {
     background-color:#E8C4F5;
+    text-align: center;
     color:#1F0229;
     padding: 5px;
     height: 100%;
-    width: 80%;
     font-size: x-large;
 }
 
