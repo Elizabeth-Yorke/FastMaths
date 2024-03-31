@@ -101,7 +101,7 @@ h1, h2, h3, h4, h5 {
 /* -- Welcome Area -- */
 
 .main-content {
-    min-height: calc(100vh - 194px);
+    min-height: calc(100vh - 212px);
 }
 
 .welcome-instructions {
@@ -391,7 +391,7 @@ h1, h2, h3, h4, h5 {
     padding-bottom: 20px;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 768px) {
     .main-content {
         min-height: 0;
     }
