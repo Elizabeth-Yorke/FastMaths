@@ -110,6 +110,7 @@ I encountered a few bugs, particularly in during the testing phase. Here is what
 | There was some white space due to margins and padding in some of the earlier commits. | I used the dev tools to inspect and figure out the problem, and deleted unnecessary padding. |
 | I had forgotten some aria-labels | I added the missing labels. |
 | The scores were continuing on from last game. | I added a page reload function to the end of the timer to clear all the scores. |
+| I couldn't get the blue lines under this links on index.html to disappear with normal css.| i tried !important, then I tried adding css to various parents. Eventually I had to write it into the html on the <a> to get it to work. |
 
 ## Unfixed Bugs
 
