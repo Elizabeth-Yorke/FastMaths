@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+<!-- Favicon Link -->
+
+<link href="assets/images/favicon.ico" rel="icon" type="image/ico">
+
+<!-- Bootstrap Links -->
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+<!-- Fontawesome Link -->
+
+<script src="https://kit.fontawesome.com/b1a8406ee7.js" crossorigin="anonymous"></script>
+
+<!-- CSS Link -->
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+<!-- Page Title -->
+
+    <title>Fast Maths</title><meta name="description" content="A game to improve the speed of your mental maths">
+</head>
+
+<!-- Bootstrap Navbar -->
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html" aria-label="home"><i class="fa-solid fa-bolt"></i>Fast Maths</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link"id="pageWelcome" href="index.html" aria-labelledby="home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="pageA" href="multiplication.html" aria-labelledby="multiplication">Multiplication</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="pageB" href="addition.html" aria-labelledby="addition">Addition</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="pageC" href="subtraction.html" aria-labelledby="subtraction">Subtraction</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="pageD" href="division.html" aria-labelledby="division">Division</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="pageInstructions" href="instructions.html" aria-labelledby="instructions">Instructions</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" id="pageWelcome" href="pairs.html" aria-labelledby="matching-pairs">Pairs</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+<!-- Welcome Message -->
+
+<div class="main-content-home color-scheme-ax">
+<section>
+    <div>
+        <a class="navbar-brand" href="index.html" aria-label="home"><h1 class="main-title"><i class="fa-solid fa-bolt"></i> Fast Maths Pairs!</h1></a>
+        <p class="welcome-instructions">Match the pairs of cards with the same answer.</p>
+    </div>
+    <div id="card-display">
+      <div class="row card-row" id="row4">
+        <div class="col-md-2 left-side"></div>
+        <div class="col-md-2 card row" id="card14">
+          <span class="col-md-4 card-span" id="num14A">0</span>
+          <span class="col-md-4 card-span" id="operator14">x</span>
+          <span class="col-md-4 card-span" id="num14B">0</span>
+        </div>
+        <div class="col-md-2 card row" id="card24">
+          <span class="col-md-4 card-span" id="num24A">0</span>                
+          <span class="col-md-4 card-span" id="operator24">+</span>
+          <span class="col-md-4 card-span" id="num24B">0</span>
+        </div>
+        <div class="col-md-2 card row" id="card34">
+          <span class="col-md-4 card-span" id="num34A">0</span>                
+          <span class="col-md-4 card-span" id="operator34">-</span>
+          <span class="col-md-4 card-span" id="num34B">0</span>
+        </div>
+        <div class="col-md-2 card row" id="card44">
+          <span class="col-md-4 card-span" id="num44A">0</span>                
+          <span class="col-md-4 card-span" id="operator44">/</span>
+          <span class="col-md-4 card-span" id="num44B">0</span>
+        </div>
+        <div class="col-md-2 right-side"></div>
+      </div>
+      <div class="row card-row" id="row3">
+        <div class="col-md-2 left-side"></div>
+        <div class="col-md-2 card row" id="card13">
+          <span class="col-md-4 card-span" id="num13A">0</span>                
+          <span class="col-md-4 card-span" id="operator13">/</span>
+          <span class="col-md-4 card-span" id="num13B">0</span>
+        </div>
+        <div class="col-md-2 card row" id="card23">
+          <span class="col-md-4 card-span" id="num23A">0</span>                
+          <span class="col-md-4 card-span" id="operator23">x</span>
+          <span class="col-md-4 card-span" id="num23B">0</span>
+        </div>
+        <div class="col-md-2 card row" id="card33">
+          <span class="col-md-4 card-span" id="num33A">0</span>                
+          <span class="col-md-4 card-span" id="operator33">-</span>
+          <span class="col-md-4 card-span" id="num33B">0</span>
+        </div>
+        <div class="col-md-2 card row" id="card43">
+          <span class="col-md-4 card-span" id="num43A">0</span>                
+          <span class="col-md-4 card-span" id="operator43">x</span>
+          <span class="col-md-4 card-span" id="num43B">0</span>
+        </div>
+        <div class="col-md-2 right-side">
+        </div>
+      </div>
+      <div class="row card-row"id=" row2">
+        <div class="col-md-2 left-side"></div>
+        <div class="col-md-2 card row" id="card12">
+          <span class="col-md-4 card-span" id="num12A">0</span>                
+          <span class="col-md-4 card-span" id="operator12">-</span>
+          <span class="col-md-4 card-span" id="num12B">0</span>
+        </div>
+        <div class="col-md-2 card row" id="card22">
+          <span class="col-md-4 card-span" id="num22A">0</span>                
+          <span class="col-md-4 card-span" id="operator22">-</span>
+          <span class="col-md-4 card-span" id="num22B">0</span>
+        </div>
+        <div class="col-md-2 card row" id="card32">
+          <span class="col-md-4 card-span" id="num32A">0</span>                
+          <span class="col-md-4 card-span" id="operator32">/</span>
+          <span class="col-md-4 card-span" id="num32B">0</span>
+        </div>
+        <div class="col-md-2 card row" id="card42">
+          <span class="col-md-4 card-span" id="num42A">0</span>                
+          <span class="col-md-4 card-span" id="operator42">+</span>
+          <span class="col-md-4 card-span" id="num42B">0</span>
+        </div>
+        <div class="col-md-2 right-side"></div>
+      </div>
+      <div class="row card-row" id="row1">
+        <div class="col-md-2 left-side"></div>
+        <div class="col-md-2 card row" id="card11">
+          <span class="col-md-4 card-span" id="num11A">0</span>                
+          <span class="col-md-4 card-span" id="operator11">+</span>
+          <span class="col-md-4 card-span" id="num11B">0</span>
+        </div>
+        <div class="col-md-2 card row" id="card21">
+          <span class="col-md-4 card-span" id="num21A">0</span>                
+          <span class="col-md-4 card-span" id="operator21">/</span>
+          <span class="col-md-4 card-span" id="num21B">0</span>
+        </div>
+        <div class="col-md-2 card row" id="card31">
+          <span class="col-md-4 card-span" id="num31A">0</span>                
+          <span class="col-md-4 card-span" id="operator31">x</span>
+          <span class="col-md-4 card-span" id="num31B">0</span>
+        </div>
+        <div class="col-md-2 card row" id="card41">
+          <span class="col-md-4 card-span" id="num41A">0</span>                
+          <span class="col-md-4 card-span" id="operator41">+</span>
+          <span class="col-md-4 card-span" id="num41B">0</span>
+        </div>
+        <div class="col-md-2 right-side"></div>
+      </div>
+    </div>
+    <div class="start-button">
+      <button id="startButton">Start</button>
+    </div>
+</section>
+</div>
+
+<!-- Footer -->
+
+<footer>
+    <section>
+    <div class="row g-0">
+        <div class="col-md-4 footer-top color-scheme-by">
+            <div class="stars">Copyright 2024 <i class="fa-regular fa-copyright"></i></div>
+        </div>
+        <div class="col-md-4 footer-top copyright color-scheme-bx"><h3 id="enjoy-footer">Enjoy your game!</h3></div>
+        <div class="col-md-4 footer-top social media color-scheme-by">
+            <p>Share your progress on Social Media</p>
+            <div>
+              <a class="footer-links" href="https://www.tiktok.com/" target="_blank" aria-label="tiktok"><i class="fa-brands fa-tiktok"></i></a>
+              <a class="footer-links" href="https://www.instagram.com/" target="_blank" aria-label="instagram"><i class="fa-brands fa-instagram"></i></a>
+              <a class="footer-links" href="https://twitter.com/" target="_blank" aria-label="twitter"><i class="fa-brands fa-twitter"></i></a>
+              <a class="footer-links" href="https://www.facebook.com/" target="_blank" aria-label="facebook"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+        </div>
+    </div>
+    </section>
+</footer>
+    <script src="assets/js/pairs.js"></script>
+</body>
+</html>

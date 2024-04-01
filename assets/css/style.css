@@ -413,3 +413,33 @@ h1, h2, h3, h4, h5, h6 {
         height: 200px;
     }
 }
+
+/* -- Matching Pairs -- */
+
+.card {
+    text-align: center;
+    background-color: #E8C4F5;
+    color:#1F0229;
+    width: 15%;
+    height: 40px;
+    margin: 5px;
+    padding: 5px;
+}
+
+#card-display {
+    padding: 20px;
+}
+
+.start-button {
+    text-align:center;
+    padding-bottom: 20px;
+}
+
+#startButton {
+    background-color:#B6E7F5;
+    color:#1F0229;
+    font-family: 'Luckiest Guy', cursive;
+    font-size:xx-large;
+    padding: 5px;
+    width: 15%;
+}

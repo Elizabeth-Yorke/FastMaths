@@ -107,7 +107,7 @@ I encountered a few bugs, particularly in during the testing phase. Here is what
 | The page wasn't reaching the bottom of the screen. | I added calc() |
 | calc() made the phone pages very long. | I tried different combinations of calc(), media queries and bootstrap columns until everything aligned perfectly. |
 | There was still an issue with whitespace on one particular screen size, and calc() doesn't work in media queries | I added a whitespace cover media query which seems to work well. |
-| There was some white space due to margins and padding in some of the earlier commits. | I used the dev tools to inspect and figure out the problem, and deleted unnecessary padding. |
+| There was some white space horizontal lines due to margins and padding in some of the earlier commits. | I used the dev tools to inspect and figure out the problem, and deleted unnecessary padding. |
 | I had forgotten some aria-labels | I added the missing labels. |
 | The scores were continuing on from last game. | I added a page reload function to the end of the timer to clear all the scores. |
 | I couldn't get the blue lines under this links on index.html to disappear with normal css.| i tried !important, then I tried adding css to various parents. Eventually I had to write it into the html on the <a> to get it to work. |
