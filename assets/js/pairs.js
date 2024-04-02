@@ -1,28 +1,6 @@
 /**
- * Waits for DOM content to load
- * Listens for actions from user
- * Assigns appropriate functions
+ * Function to generate pairs of questions with the same answer
  */
-
-document.addEventListener("DOMContentLoaded", function(){
-    let startButton = document.getElementById("startButton");
-    startButton.addEventListener("click",function(){
-        startPairs();
-    });
-    let cards = document.getElementsByClassName("card");
-    let clicked = false;
-    for (let card of cards){
-        card.addEventListener("click", changeColor);
-        function changeColor() {
-            if (!clicked) {
-                card.style.backgroundColor = '#B6E7F5';``
-            } else {
-                card.style.backgroundColor = '#E8C4F5';
-            }
-            clicked = !clicked;
-        }       
-    }
-});
 
 function startPairs() {
 
@@ -99,6 +77,33 @@ function startPairs() {
     document.getElementById('num42B').textContent = pairH3;
 }
 
+/**
+ *  Function changes color of box that user clicks on.
+ *  Then returns box to original color if clicked again.
+ */
 
+function changeColor() {
+    let clicked = false;
+    if (clicked) {
+        card.style.backgroundColor = '#B6E7F5';``
+    } else {
+        card.style.backgroundColor = '#E8C4F5';
+    }
+}     
+
+/**
+ * Event listeners
+ */
+
+document.addEventListener("DOMContentLoaded", function(){
+
+    let startButton = document.getElementById("startButton");
+    startButton.addEventListener("click", startPairs);
+
+    let cards = document.getElementsByClassName("card");
+    for (let card of cards){
+        card.addEventListener("click", changeColor); 
+    }
+});
 
 

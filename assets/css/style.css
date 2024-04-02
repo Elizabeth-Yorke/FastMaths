@@ -443,3 +443,9 @@ h1, h2, h3, h4, h5, h6 {
     padding: 5px;
     width: 15%;
 }
+
+.selectedBox {
+    background-color:#B6E7F5 !important;
+    color:#1F0229 !important;
+}
+
