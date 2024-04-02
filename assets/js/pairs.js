@@ -114,7 +114,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
     let cards = document.getElementsByClassName("card");
     for (let card of cards){
-        card.addEventListener("click", selectCard(card));
+        card.addEventListener("click", selectCard);
     }
 });
 
