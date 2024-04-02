@@ -82,14 +82,26 @@ function startPairs() {
  *  Then returns box to original color if clicked again.
  */
 
-function changeColor() {
-    let clicked = false;
-    if (clicked) {
-        card.style.backgroundColor = '#B6E7F5';``
-    } else {
-        card.style.backgroundColor = '#E8C4F5';
+let selectedCards = [];
+
+function selectCard(card) {
+
+    if (selectedCards.length === 2 && !selectedCards.includes(card)){
+        return;
     }
-}     
+    
+    if (selectedCards.includes(card)) {
+        card.classList.remove('selectedBox');
+        selectedCards = selectedCards.filter(item => item !== card);
+    } else {
+        card.classList.add('selectedBox');
+        selectedCards.push(card);
+    }
+
+    if (selectedCards.length === 2) {
+        console.log('Selected cards:',selectedCards);
+    }
+}
 
 /**
  * Event listeners
@@ -102,8 +114,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
     let cards = document.getElementsByClassName("card");
     for (let card of cards){
-        card.addEventListener("click", changeColor); 
+        card.addEventListener("click", selectCard(card));
     }
 });
-
 
