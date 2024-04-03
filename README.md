@@ -14,7 +14,12 @@ A mock-up image of Speed Maths interactive game, using the "Am I Responsive" sit
 My wireframe was created using [Balsamiq.](https://balsamiq.com/) Here are screenshots of the wireframes:
 | Page | Phone Wireframe | Tablet Wireframe | Desktop Wireframe |
 | --- | --- | --- | --- |
-| --- | --- | --- | --- |
+| home | [pdf](assets/documents/wireframes/index-phone.pdf) | [pdf](assets/documents/wireframes/index-tablet.pdf) | [pdf](assets/documents/wireframes/index-desktop.pdf) |
+| multiplication | [pdf](assets/documents/wireframes/multiplication-phone.pdf) | [pdf](assets/documents/wireframes/multiplication-tablet.pdf) | [pdf](assets/documents/wireframes/multiplication-desktop.pdf) |
+| addition | [pdf](assets/documents/wireframes/addition-phone.pdf) | [pdf](assets/documents/wireframes/addition-tablet.pdf) | [pdf](assets/documents/wireframes/division-desktop.pdf) |
+| subtraction | [pdf](assets/documents/wireframes/subtraction-phone.pdf) | [pdf](assets/documents/wireframes/subtraction-tablet.pdf) | [pdf](assets/documents/wireframes/subtraction-desktop.pdf) |
+| division | [pdf](assets/documents/wireframes/division-phone.pdf) | [pdf](assets/documents/wireframes/division-tablet.pdf) | [pdf](assets/documents/wireframes/division-desktop.pdf) |
+| instructions | [pdf](assets/documents/wireframes/instructions-phone.pdf) | [pdf](assets/documents/wireframes/instructions-tablet.pdf) | [pdf](assets/documents/wireframes/instructions-desktop.pdf) |
 
 ### Colour Scheme
 
