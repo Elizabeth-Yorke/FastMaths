@@ -1,3 +1,7 @@
+// Definitions of variables for use throughout the document
+let highscoreC = document.getElementById("highscoreC");
+let highscoreCValue = 0;
+
 /**
  * Waits for DOM content to load
  * Listens for actions from user
@@ -76,42 +80,64 @@ function checkSubtractionAnswer() {
     document.getElementById("answer-box-C").value = '';
 
     //sets the next question
-    runSubtractionGame(calculatedAnswer[1]);
+    runSubtractionGame();
+}
 
+function updateHighscore() {
+
+    //retreives latest figures for highscoreC and positiveC
+    let positiveC = parseInt(document.getElementById("positiveC").innerText);
+
+    //replaces highscoreC with positiveC if positiveC is greater
+    if (positiveC > highscoreCValue){
+        highscoreCValue = parseInt(positiveC);
+        highscoreC.innerText = positiveC;
+    } else {
+        return;
+    }
 }
 
 /**
- * Timer to counts down to 0.
+ * Resets scores to 0.
+ * Resets question numbers to ?
  */
 
-function startTimer(duration, display) {
-    let timer = duration, minutes, seconds;
-    setInterval(function () {
-        minutes = parseInt(timer / 60, 10);
-        seconds = parseInt(timer % 60, 10);
-
-        minutes = minutes < 10 ? "0" + minutes : minutes;
-        seconds = seconds < 10 ? "0" + seconds : seconds;
-
-        display.textContent = minutes + ":" + seconds;
-
-        if (--timer < 0) {
-            timer = 0;
-            let positiveC = document.getElementById("positiveC").innerText;
-            let negativeC = document.getElementById("negativeC").innerText;
-            alert(`Your time is up! You got ${positiveC} right and ${negativeC} wrong.`);
-            location.reload();
-        }
-    }, 1000);
+function resetScores() {
+    //clears scores
+    let positiveC = document.getElementById("positiveC");
+    let negativeC = document.getElementById("negativeC");      
+    positiveC.innerText = '0';
+    negativeC.innerText = '0';
+    
+    //Sets question numbers to ?
+    let partC1 = document.getElementById("partC1");
+    let partC2 = document.getElementById("partC2");
+    partC1.innerText = '?';
+    partC2.innerText = '?';
 }
 
 /**
- * Novice Timer to start at 80seconds on click
+ * Makes it so that the timers can be clicked again
+ * Puts the labels back on the timers
+ */
+
+function resetTimers() {
+    document.getElementById('noviceTimerC').removeAttribute('disabled');
+    document.getElementById('adeptTimerC').removeAttribute('disabled');
+    document.getElementById('advancedTimerC').removeAttribute('disabled');
+    document.getElementById('noviceTimerC').innerText = 'Novice';
+    document.getElementById('adeptTimerC').innerText = 'Adept';
+    document.getElementById('advancedTimerC').innerText = 'Advanced';
+}
+
+/**
+ * Novice Timer to start at 60 seconds on click
  */
 
 let noviceTimerC = document.querySelector('#noviceTimerC');
 noviceTimerC.onclick = function () {
-    let time = 80; // time in seconds here
+
+    let time = 60; // time in seconds here
     startTimer(time, noviceTimerC);
     let timers = document.querySelectorAll('.timer');
     console.log("timers", timers);
@@ -121,11 +147,12 @@ noviceTimerC.onclick = function () {
 };
 
 /**
- * Intermediate Timer to start at 40 seconds on click
+ * Adept Timer to start at 40 seconds on click
  */
 
 let adeptTimerC = document.querySelector('#adeptTimerC');
 adeptTimerC.onclick = function () {
+
     let time = 40; // time in seconds here
     startTimer(time, adeptTimerC);
     let timers = document.querySelectorAll('.timer');
@@ -141,11 +168,28 @@ adeptTimerC.onclick = function () {
 
 let advancedTimerC = document.querySelector('#advancedTimerC');
 advancedTimerC.onclick = function () {
+
     let time = 20; // time in seconds here
     startTimer(time, advancedTimerC);
     let timers = document.querySelectorAll('.timer');
-    console.log("timers", timers);
     timers.forEach((timer) => {        
         timer.setAttribute("disabled", "");
     });
 };
+
+/**
+ * Timer counts down
+ */
+
+function startTimer(sec, display){
+    var timer = setInterval(function(){
+        display.innerHTML= +sec;
+        sec--;
+        if (sec < 0) {
+            clearInterval(timer);
+            updateHighscore();
+            resetScores();
+            resetTimers();
+        }
+    }, 1000);
+}

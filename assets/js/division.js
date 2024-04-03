@@ -1,3 +1,7 @@
+// Definitions of variables for use throughout the document
+let highscoreD = document.getElementById("highscoreD");
+let highscoreDValue = 0;
+
 /**
  * Waits for DOM content to load
  * Listens for actions from user
@@ -76,42 +80,64 @@ function checkDivisionAnswer() {
     document.getElementById("answer-box-D").value = '';
 
     //sets the next question
-    runDivisionGame(calculatedAnswer[1]);
+    runDivisionGame();
+}
 
+function updateHighscore() {
+
+    //retreives latest figures for highscoreD and positiveD
+    let positiveD = parseInt(document.getElementById("positiveD").innerText);
+
+    //replaces highscoreD with positiveD if positiveD is greater
+    if (positiveD > highscoreDValue){
+        highscoreDValue = parseInt(positiveD);
+        highscoreD.innerText = positiveD;
+    } else {
+        return;
+    }
 }
 
 /**
- * Timer to counts down to 0.
+ * Resets scores to 0.
+ * Resets question numbers to ?
  */
 
-function startTimer(duration, display) {
-    let timer = duration, minutes, seconds;
-    setInterval(function () {
-        minutes = parseInt(timer / 60, 10);
-        seconds = parseInt(timer % 60, 10);
-
-        minutes = minutes < 10 ? "0" + minutes : minutes;
-        seconds = seconds < 10 ? "0" + seconds : seconds;
-
-        display.textContent = minutes + ":" + seconds;
-
-        if (--timer < 0) {
-            timer = 0;
-            let positiveD = document.getElementById("positiveD").innerText;
-            let negativeD = document.getElementById("negativeD").innerText;
-            alert(`Your time is up! You got ${positiveD} right and ${negativeD} wrong.`);
-            location.reload();
-        }
-    }, 1000);
+function resetScores() {
+    //clears scores
+    let positiveD = document.getElementById("positiveD");
+    let negativeD = document.getElementById("negativeD");      
+    positiveD.innerText = '0';
+    negativeD.innerText = '0';
+    
+    //Sets question numbers to ?
+    let partD1 = document.getElementById("partD1");
+    let partD2 = document.getElementById("partD2");
+    partD1.innerText = '?';
+    partD2.innerText = '?';
 }
 
 /**
- * Novice Timer to start at 80seconds on click
+ * Makes it so that the timers can be clicked again
+ * Puts the labels back on the timers
+ */
+
+function resetTimers() {
+    document.getElementById('noviceTimerD').removeAttribute('disabled');
+    document.getElementById('adeptTimerD').removeAttribute('disabled');
+    document.getElementById('advancedTimerD').removeAttribute('disabled');
+    document.getElementById('noviceTimerD').innerText = 'Novice';
+    document.getElementById('adeptTimerD').innerText = 'Adept';
+    document.getElementById('advancedTimerD').innerText = 'Advanced';
+}
+
+/**
+ * Novice Timer to start at 60 seconds on click
  */
 
 let noviceTimerD = document.querySelector('#noviceTimerD');
 noviceTimerD.onclick = function () {
-    let time = 80; // time in seconds here
+
+    let time = 60; // time in seconds here
     startTimer(time, noviceTimerD);
     let timers = document.querySelectorAll('.timer');
     console.log("timers", timers);
@@ -121,11 +147,12 @@ noviceTimerD.onclick = function () {
 };
 
 /**
- * Intermediate Timer to start at 40 seconds on click
+ * Adept Timer to start at 40 seconds on click
  */
 
 let adeptTimerD = document.querySelector('#adeptTimerD');
 adeptTimerD.onclick = function () {
+
     let time = 40; // time in seconds here
     startTimer(time, adeptTimerD);
     let timers = document.querySelectorAll('.timer');
@@ -141,11 +168,28 @@ adeptTimerD.onclick = function () {
 
 let advancedTimerD = document.querySelector('#advancedTimerD');
 advancedTimerD.onclick = function () {
+
     let time = 20; // time in seconds here
-    startTimer(time, advancedTimerD);    
+    startTimer(time, advancedTimerD);
     let timers = document.querySelectorAll('.timer');
-    console.log("timers", timers);
     timers.forEach((timer) => {        
         timer.setAttribute("disabled", "");
     });
 };
+
+/**
+ * Timer counts down
+ */
+
+function startTimer(sec, display){
+    var timer = setInterval(function(){
+        display.innerHTML= +sec;
+        sec--;
+        if (sec < 0) {
+            clearInterval(timer);
+            updateHighscore();
+            resetScores();
+            resetTimers();
+        }
+    }, 1000);
+}

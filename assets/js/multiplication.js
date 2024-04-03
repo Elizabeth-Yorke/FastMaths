@@ -1,3 +1,4 @@
+// Definitions of variables for use throughout the document
 let highscoreA = document.getElementById("highscoreA");
 let highscoreAValue = 0;
 
@@ -76,7 +77,6 @@ function checkMultiplicationAnswer() {
 
     //sets the next question
     runMultiplicationGame();
-
 }
 
 function updateHighscore() {
@@ -86,7 +86,10 @@ function updateHighscore() {
 
     //replaces highscoreA with positiveA if positiveA is greater
     if (positiveA > highscoreAValue){
+        highscoreAValue = parseInt(positiveA);
         highscoreA.innerText = positiveA;
+    } else {
+        return;
     }
 }
 
@@ -108,6 +111,11 @@ function resetScores() {
     partA1.innerText = '?';
     partA2.innerText = '?';
 }
+
+/**
+ * Makes it so that the timers can be clicked again
+ * Puts the labels back on the timers
+ */
 
 function resetTimers() {
     document.getElementById('noviceTimerA').removeAttribute('disabled');
