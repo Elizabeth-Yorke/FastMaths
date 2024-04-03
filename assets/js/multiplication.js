@@ -83,8 +83,6 @@ function updateHighscore() {
 
     //retreives latest figures for highscoreA and positiveA
     let positiveA = parseInt(document.getElementById("positiveA").innerText);
-    console.log('positiveA', positiveA);
-    console.log('highscoreA', highscoreAValue);
 
     //replaces highscoreA with positiveA if positiveA is greater
     if (positiveA > highscoreAValue){
@@ -96,6 +94,7 @@ function updateHighscore() {
  * Resets scores to 0.
  * Resets question numbers to ?
  */
+
 function resetScores() {
     //clears scores
     let positiveA = document.getElementById("positiveA");
@@ -114,6 +113,9 @@ function resetTimers() {
     document.getElementById('noviceTimerA').removeAttribute('disabled');
     document.getElementById('adeptTimerA').removeAttribute('disabled');
     document.getElementById('advancedTimerA').removeAttribute('disabled');
+    document.getElementById('noviceTimerA').innerText = 'Novice';
+    document.getElementById('adeptTimerA').innerText = 'Adept';
+    document.getElementById('advancedTimerA').innerText = 'Advanced';
 }
 
 /**
@@ -158,7 +160,6 @@ advancedTimerA.onclick = function () {
     let time = 20; // time in seconds here
     startTimer(time, advancedTimerA);
     let timers = document.querySelectorAll('.timer');
-    console.log("timers", timers);
     timers.forEach((timer) => {        
         timer.setAttribute("disabled", "");
     });
@@ -173,10 +174,10 @@ function startTimer(sec, display){
         display.innerHTML= +sec;
         sec--;
         if (sec < 0) {
-            clearInterval();
+            clearInterval(timer);
             updateHighscore();
             resetScores();
-            resetTimers(display);
+            resetTimers();
         }
     }, 1000);
 }
