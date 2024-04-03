@@ -132,7 +132,7 @@ function resetTimers() {
 
 let noviceTimerA = document.querySelector('#noviceTimerA');
 noviceTimerA.onclick = function () {
-
+    resetScores();
     let time = 60; // time in seconds here
     startTimer(time, noviceTimerA);
     let timers = document.querySelectorAll('.timer');
@@ -148,7 +148,7 @@ noviceTimerA.onclick = function () {
 
 let adeptTimerA = document.querySelector('#adeptTimerA');
 adeptTimerA.onclick = function () {
-
+    resetScores();
     let time = 40; // time in seconds here
     startTimer(time, adeptTimerA);
     let timers = document.querySelectorAll('.timer');
@@ -164,7 +164,7 @@ adeptTimerA.onclick = function () {
 
 let advancedTimerA = document.querySelector('#advancedTimerA');
 advancedTimerA.onclick = function () {
-
+    resetScores();
     let time = 20; // time in seconds here
     startTimer(time, advancedTimerA);
     let timers = document.querySelectorAll('.timer');
@@ -184,7 +184,6 @@ function startTimer(sec, display){
         if (sec < 0) {
             clearInterval(timer);
             updateHighscore();
-            resetScores();
             resetTimers();
         }
     }, 1000);
