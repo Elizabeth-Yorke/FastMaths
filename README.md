@@ -85,7 +85,10 @@ Here are some of the most notable improvements:
 - After the initial build I had to add functions to make sure it was only possible to select one timer once.
 - I used calc() to make sure each page stretched to the bottom of the screen.
 - I added a welcome page to ensure consistency throughout the site.
-- I have persistently refined and improved the javaScript, even after it was working well, because it was (and still is) much longer than I would like it to be.
+- I have persistently looked at ways to reduce the amount of javaScript, even after it was working well.
+- I removed the alert which told the user their scores at the end of each timer, as it wasn't necessary and it wasn't closing properly in all browsers.
+- I added a High Score function to each page.
+- I replaced location.reload() with a function that reset the scores at the end of the timer without reloading the page, so the user could maintain the highscore until the page reloads.
 
 ## Technologies Used
 
@@ -169,9 +172,9 @@ Here is a list of websites I used to create this project:
 
 ### Acknowledgements
 
-    I would like to thank my Code Institute mentor, Sheryl Goldberg for her invaluable advice.
+    I would like to thank my Code Institute mentor, Sheryl Goldberg for her invaluable advice. I really feel she went over and above offering her time to answer my many questions on JS.
     I would like to thank Jessica Ickechukwu, my tutor.
     I would like to thank the Code Institute tutor team for their assistance.
     I would like to thank the Code Institute Slack community for the their support.
-    I would like to thank my husband Kieron Yorke, for all his help.
+    I would like to thank my husband Kieron Yorke.
 
