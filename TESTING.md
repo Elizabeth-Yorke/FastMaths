@@ -23,6 +23,7 @@ The following validation has been done using the recommended [HTML W3C Validator
 The following validation has been done using the recommended [The W3C CSS Validaton Service](https://jigsaw.w3.org/css-validator/validator) using the live, deployed site using the site links shown below.
 
 | Page | W3C URL | Screenshot | Notes |
+| --- | --- | --- | --- |
 | style.css| [W3C] ([weblink](https://jigsaw.w3.org/css-validator/validator)) | ![screenshot](assets/documents/validation/style.css.png) | No errors: Initial errors found and fixed.|
 
 ### JavaScript
@@ -31,6 +32,7 @@ The following validation has been done using the recommended [The W3C CSS Valida
 The following validation has been done using [jshint.com](https://jshint.com/) using the live, deployed site using the site links shown below.
 
 | Page | Screenshot | Notes | Comments |
+| --- | --- | --- | --- |
 | multiplication.js | ![screenshot](assets/documents/validation/multiplication.js.png) | The same 3 warnings, numerous times: 1. Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. 2. 'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz). 3. 'arrow function syntax (=>)' is only available in ES6 (use 'esversion: 6').| Given that the 3 things referred to above were all demonstrated within the course, I ignored this as they must be acceptable. |
 | addition.js| ![screenshot](assets/documents/validation/addition.js.png) | The same 3 warnings, numerous times: 1. Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. 2. 'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz). 3. 'arrow function syntax (=>)' is only available in ES6 (use 'esversion: 6').| Given that the 3 things referred to above were all demonstrated within the course, I ignored this as they must be acceptable. |
 | subtraction.js| ![screenshot](assets/documents/validation/subtraction.js.png) | The same 3 warnings, numerous times: 1. Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. 2. 'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz). 3. 'arrow function syntax (=>)' is only available in ES6 (use 'esversion: 6').| Given that the 3 things referred to above were all demonstrated within the course, I ignored this as they must be acceptable. |
