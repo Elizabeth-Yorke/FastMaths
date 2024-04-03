@@ -158,7 +158,7 @@ Here is a list of websites I used to create this project:
 | Source | Purpose | Notes |
 | --- | --- | --- |
 | [Love Maths](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+CPJS_06_20+2020_T1/courseware/8f9b28d4b7664bb59ddf18b8e090671f/b6d5c008ef4a460ba0836a224aa3b3fb/) | 	| game function | I used this website because it showcased a lot of the javaScript I wanted to use in my project. |
-| [Susie June's Cafe Website](https://elizabeth-yorke.github.io/SusieJunes-A/) | file structure | I used this website and its GitHub repository to remind myself of everything I learned in the first part of the course. |
+| [Susie June's Cafe Website](https://elizabeth-yorke.github.io/SusieJunes-A/) | File structure | I used this website and its GitHub repository to remind myself of everything I learned in the first part of the course. |
 | [mdn web docs](https://developer.mozilla.org/en-US/) | syntax queries | I used this website because it was recommmended to do so at numerous points during the course. |
 | [Stack Overflow](https://stackoverflow.com/) | problem solving | I looked up questions and answers on Stack Overflow every time I just wanted to see if my ideas were feasible in html and css, before I got carried away researching how to do impossible things. |
 | [W3Schools](https://www.w3schools.com/) | syntax queries | I used this website when I wanted to know how to use particular functions. |
@@ -166,7 +166,7 @@ Here is a list of websites I used to create this project:
 | [Favicon.cc](https://www.favicon.cc/) | favicon | I used this website to generate the favicon. |
 | [AltAcademy](https://www.altcademy.com/?ref=blog) | problem solving | I used this website to help me discover new javascript functions. |
 | [Adobe Color](https://color.adobe.com/create/color-wheel) | colors | I used this website to research and create a colour palate. |
-| [Fontawesome](https://fontawesome.com/) |	icons |	I only really used this forthe social media icons. |
+| [Fontawesome](https://fontawesome.com/) |	icons |	I only really used this for the social media icons. |
 | [Google Fonts](https://fonts.google.com/) | fonts | I used this for the fonts. |
 | [Bootstrap](https://getbootstrap.com/) | navbar |	I bootstrapped a navbar, then personalised it. |
 
