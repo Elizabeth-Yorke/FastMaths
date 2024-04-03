@@ -40,7 +40,7 @@ The following validation has been done using [jshint.com](https://jshint.com/) u
 
 As all forms of javaScript refered to in these warnings were recommended within the course, I have decided to ignore the warnings for now.
 
-####Functionality Testing
+#### Functionality Testing
 On each of the game pages, I tested that:
 - The links in the menu bar worked.
 - I saw what I expected to see on the screen.
