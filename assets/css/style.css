@@ -101,11 +101,11 @@ h1, h2, h3, h4, h5, h6 {
 /* -- Welcome Area -- */
 
 .main-content {
-    min-height: calc(100vh - 212px);
+    min-height: calc(100vh - 178px);
 }
 
 .main-content-home {
-    min-height: calc(100vh - 212px);
+    min-height: calc(100vh - 178px);
 }
 
 .welcome-instructions {
@@ -297,9 +297,25 @@ h1, h2, h3, h4, h5, h6 {
 .reset {
     text-align: center;
     padding: 5px;
-    width: 200px;
+    width: 250px;
     font-family: 'Luckiest Guy', cursive;
     font-size:x-large;
+}
+
+/* -- High Score -- */
+
+.highscore-title {
+    text-align: center;
+    padding-bottom: 0;
+} 
+
+.highscore {
+    margin-left: 40px;
+    padding-left: 20px;
+}
+
+.highscore-bracket {
+    padding-top: 0;
 }
 
 /* -- Addition Page -- */

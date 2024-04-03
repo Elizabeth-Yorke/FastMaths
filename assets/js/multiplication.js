@@ -1,3 +1,6 @@
+let highscoreA = document.getElementById("highscoreA");
+let highscoreAValue = 0;
+
 /**
  * Waits for DOM content to load
  * Listens for actions from user
@@ -6,7 +9,6 @@
 
 document.addEventListener("DOMContentLoaded", function(){
     let clickOns = document.getElementsByClassName("clickOn");
-    console.log("clickOns", clickOns);
     for (let clickOn of clickOns){
         clickOn.addEventListener("click", function(){
             if (this.id === "questionA") {
@@ -48,20 +50,15 @@ function checkMultiplicationAnswer() {
     // Reads generated question
     let partA1 = parseInt(document.getElementById('partA1').innerText);
     let partA2 = parseInt(document.getElementById('partA2').innerText);
-    console.log(partA1);
-    console.log(partA2);
 
     // Calculates correct answer
     let calculatedAnswer = partA1 * partA2;
-    console.log(calculatedAnswer);
 
     // Reads user answer
     let userAnswer = parseInt(document.getElementById("answer-box-A").value);
-    console.log(userAnswer);
 
     // Checks if user answer matches correct answer
     let rightAnswer = userAnswer === parseInt(calculatedAnswer);
-    console.log(rightAnswer);
 
     // If user answer is correct positive score increases
     if (rightAnswer) {
@@ -82,37 +79,51 @@ function checkMultiplicationAnswer() {
 
 }
 
-/**
- * Timer to counts down to 0.
- */
+function updateHighscore() {
 
-function startTimer(duration, display) {
-    let timer = duration, minutes, seconds;
-    setInterval(function () {
-        minutes = parseInt(timer / 60, 10);
-        seconds = parseInt(timer % 60, 10);
+    //retreives latest figures for highscoreA and positiveA
+    let positiveA = parseInt(document.getElementById("positiveA").innerText);
+    console.log('positiveA', positiveA);
+    console.log('highscoreA', highscoreAValue);
 
-        minutes = minutes < 10 ? "0" + minutes : minutes;
-        seconds = seconds < 10 ? "0" + seconds : seconds;
-
-        display.textContent = minutes + ":" + seconds;
-
-        if (--timer < 0) {
-            timer = 0;
-            let positiveA = document.getElementById("positiveA").innerText;
-            let negativeA = document.getElementById("negativeA").innerText;
-            alert(`Your time is up! You got ${positiveA} right and ${negativeA} wrong.`);
-            location.reload();
-        }
-    }, 1000);
+    //replaces highscoreA with positiveA if positiveA is greater
+    if (positiveA > highscoreAValue){
+        highscoreA.innerText = positiveA;
+    }
 }
 
 /**
- * Novice Timer to start at 80seconds on click
+ * Resets scores to 0.
+ * Resets question numbers to ?
  */
+function resetScores() {
+    //clears scores
+    let positiveA = document.getElementById("positiveA");
+    let negativeA = document.getElementById("negativeA");      
+    positiveA.innerText = '0';
+    negativeA.innerText = '0';
+    
+    //Sets question numbers to ?
+    let partA1 = document.getElementById("partA1");
+    let partA2 = document.getElementById("partA2");
+    partA1.innerText = '?';
+    partA2.innerText = '?';
+}
+
+function resetTimers() {
+    document.getElementById('noviceTimerA').removeAttribute('disabled');
+    document.getElementById('adeptTimerA').removeAttribute('disabled');
+    document.getElementById('advancedTimerA').removeAttribute('disabled');
+}
+
+/**
+ * Novice Timer to start at 60 seconds on click
+ */
+
 let noviceTimerA = document.querySelector('#noviceTimerA');
 noviceTimerA.onclick = function () {
-    let time = 80; // time in seconds here
+
+    let time = 60; // time in seconds here
     startTimer(time, noviceTimerA);
     let timers = document.querySelectorAll('.timer');
     console.log("timers", timers);
@@ -122,12 +133,13 @@ noviceTimerA.onclick = function () {
 };
 
 /**
- * Intermediate Timer to start at 40 seconds on click
+ * Adept Timer to start at 40 seconds on click
  */
-      
+
 let adeptTimerA = document.querySelector('#adeptTimerA');
 adeptTimerA.onclick = function () {
-    let time = 40; // time in seconds here    
+
+    let time = 40; // time in seconds here
     startTimer(time, adeptTimerA);
     let timers = document.querySelectorAll('.timer');
     console.log("timers", timers);
@@ -142,6 +154,7 @@ adeptTimerA.onclick = function () {
 
 let advancedTimerA = document.querySelector('#advancedTimerA');
 advancedTimerA.onclick = function () {
+
     let time = 20; // time in seconds here
     startTimer(time, advancedTimerA);
     let timers = document.querySelectorAll('.timer');
@@ -150,3 +163,20 @@ advancedTimerA.onclick = function () {
         timer.setAttribute("disabled", "");
     });
 };
+
+/**
+ * Timer counts down
+ */
+
+function startTimer(sec, display){
+    var timer = setInterval(function(){
+        display.innerHTML= +sec;
+        sec--;
+        if (sec < 0) {
+            clearInterval();
+            updateHighscore();
+            resetScores();
+            resetTimers(display);
+        }
+    }, 1000);
+}
