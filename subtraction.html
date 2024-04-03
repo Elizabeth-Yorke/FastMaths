@@ -80,9 +80,9 @@
     <div class="question-area">
         <h2 class="question-title">Question</h2>
         <div class="question-div">
-        <span id="partC1">0</span>                
+        <span id="partC1">?</span>                
         <span>-</span>
-        <span id="partC2">0</span>
+        <span id="partC2">?</span>
         <span>=</span>
         <input id="answer-box-C" class="answer-box" type="number" placeholder="" aria-label="answer-box">
         <button id="submitC" class="btn btn-outline-light clickOn submit" value="submit" aria-labelledby="submit">Submit</button>
@@ -117,7 +117,7 @@
 
             <div class="reset-button">
                 <button id="resetC" type="button" data-type="reset" class="btn btn-dark clickOn reset" style="--bs-btn-background-color:#1F0229; --bs-btn-color:#E8C4F5;" value="submit" aria-labelledby="reset">
-                   Reset Scores
+                   Reset High Score
                 </button>
             </div>
         </section>
@@ -134,7 +134,9 @@
     <section>
     <div class="row g-0">
         <div class="col-md-4 footer-top color-scheme-by">
-            <div class="stars">Copyright 2024 <i class="fa-regular fa-copyright"></i></div>
+          <div class="stars">
+              <h3 class="highscore-title">High Score<span class="highscore" id="highscoreC">0</span></h3>
+          </div>
         </div>
         <div class="col-md-4 footer-top copyright color-scheme-bx"><h3 id="enjoy-footer">Enjoy your game!</h3></div>
         <div class="col-md-4 footer-top social media color-scheme-by">
