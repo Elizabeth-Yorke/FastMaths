@@ -80,8 +80,35 @@ User stories can be found below:
 - A page with more complex questions users could chose to have questions that include negative numbers, larger numbers, decimal numbers, or even questions from different topics.
 
 ## Testing
+### Principles of Testing
+Software must be tested to make sure it does what it is supposed to do, and meets all the criteria it was written to meet. Software testing needs to find and fix bugs, but it also needs to ensure that the software meets all the user requirements. Unfortunately, however many tests are run, and however many bugs are found and fixed, it is impossible to ever guarantee any software is bug-free. This is because it is impossible to test everything.
 
-Please find details of testing on a separate page TESTING.md.
+Software testing is easier and more effective if you do it in the early stages of development, and continue to do it throughout the project. This is because it is much easier to fix a bug if you have not already written large sections of code which are dependent on  the part with the bug in it. If you end up having to change something fundamental, you may have to rewrite whole large sections of code. Bugs are often found clustered together, so most of the bugs in a project will be found concentrated in a few small areas (often areas that change a lot or have dependencies). By correctly identifying these areas, and concentrating testing in these areas, testing can be made more efficient. That said, it is important not to assume bugs will always occur in the same places, because it is easy to then fall into the trap of simply repeating the same tests. Repeated identical tests will eventually fail to identify to find bugs, even if there are still bugs there. It is therefore advisable to use a variety of testing techniques and approaches that are regularly reviewed and updated.
+
+It is important to keep in mind that software testing is context dependent. What you are testing and the resources you have available will affect the type of testing you choose to do on it.
+
+### Manual vs Automated Testing
+Software can be tested manually or using automated systems. Both methods are valid and have their own benefits. Manual testing is flexible, human-centric and responsive whilst automated testing is objective, repeatable and scalable.
+
+#### Accuracy and Reliability
+Manual testing is prone to human error, but includes human thinking and judgement. This makes it less accurate and less reliable than automated testing when it comes to straightforward repeatable test scenarios, but more accurate and more reliable when it comes to testing things that rely on human judgement (such as user experience). Whilst manual tests are susceptible to user error, automated tests are susceptible to test script errors and poor test design.
+
+#### Cost Efficiency and Scalability
+Automated testing is more cost effective for predictable tests that need to be repeated many times, because it is much faster and more accurate in these cases. It is much easier to apply to large scale projects, but the initial stages of test writing can be time consuming, making it less time efficient for small projects. Manual testing is more cost effective for tests that involve judgement or intuition, but less effective at testing large, complex scenarios. Manual testing also becomes very time consuming for large scale projects.
+
+#### Skill Requirements
+Manual testing requires a less skilled workforce, but is more effective if the people doing the testing have previous experience of testing similar software. Automated testing typically requires a workforce with strong programming skills.
+
+#### When to use Manual Testing
+Manual testing is cheaper and quicker to set up, especially for small scale projects. It is also more suited to a less skilled workforce. Some projects have specific requirements and/or have to meet regulations and standards that make manual testing essential. It is also more sensible to use manual testing for things that require human intuition and judgement, such as useability and exploratory testing.
+
+#### When to use Automated Testing
+Automated testing is more effective for large scale projects with big budgets and a workforce skilled in programming. It is more appropriate to use automated testing for frequent, repetitive and resource heavy testing, such as regression and performance testing, particularly on a large scale.
+
+### Fast Maths Testing
+This is a small scale project with no budget and a relatively unskilled workforce of one, so testing for this project has been entirely manual. 
+
+Please find details of testing for this project on a separate page TESTING.md.
 
 ### Improvements Made After Initial Testing Phase
 
@@ -94,6 +121,9 @@ Here are some of the most notable improvements:
 - I removed the alert which told the user their scores at the end of each timer, as it wasn't necessary and it wasn't closing properly in all browsers.
 - I added a High Score function to each page.
 - I replaced location.reload() with a function that reset the scores at the end of the timer without reloading the page, so the user could maintain the highscore until the page reloads.
+
+### Improvements I would like to make
+The main improvement I would like to make, is that I would like to combine all my JavaScript files into a single JavaScript file. I think this could be done quite easily, but I just ran out of time to do it before the deadline.
 
 ## Technologies Used
 
